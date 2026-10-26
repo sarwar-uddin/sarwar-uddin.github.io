@@ -3,111 +3,156 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#171714">
-  <meta name="description" content="Sarwar Uddin — computer science student, Linux enthusiast, and builder of things in Dhaka, Bangladesh.">
-  <title>Sarwar Uddin — Personal Site</title>
+  <meta name="theme-color" content="#0c0d0b">
+  <meta name="description" content="Sarwar Uddin: computer science student, Linux enthusiast, and builder of things in Dhaka, Bangladesh.">
+  <title>Sarwar Uddin</title>
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="site-header wrap">
-    <a class="wordmark" href="#top" aria-label="Sarwar Uddin, home">Sarwar Uddin<span>.</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#elsewhere">Elsewhere</a>
-    </nav>
-    <a class="availability" href="https://github.com/sarwar-uddin" target="_blank" rel="noreferrer">
-      <span class="status-dot" aria-hidden="true"></span> GitHub
-      <span aria-hidden="true">↗</span>
-    </a>
+  <header class="statusbar">
+    <div class="statusbar-inner">
+      <a class="session" href="#top" aria-label="Sarwar Uddin, home">sarwar</a>
+      <nav aria-label="Main navigation">
+        <a href="#about"><span aria-hidden="true">1:</span>about</a>
+        <a href="#projects"><span aria-hidden="true">2:</span>projects</a>
+        <a href="#offline"><span aria-hidden="true">3:</span>offline</a>
+        <a href="#contact"><span aria-hidden="true">4:</span>contact</a>
+      </nav>
+      <span class="status-right" aria-hidden="true">dhaka · bd</span>
+    </div>
   </header>
 
-  <main id="main">
-    <section class="hero wrap" id="top" aria-labelledby="hero-title">
-      <div class="eyebrow"><span>PERSONAL SITE / EST. 2026</span><span>DHAKA, BANGLADESH</span></div>
-      <p class="hero-kicker">Computer science · systems · craft</p>
-      <h1 id="hero-title">Curious about<br>how things <em>work.</em></h1>
-      <div class="hero-bottom">
-        <p class="hero-copy">I'm Sarwar — a CSE student, Linux enthusiast, and maker of things. I like getting close to the machinery, learning the fundamentals, and building things that last.</p>
-        <a class="text-link" href="#work">A few things I'm building <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hero-rule" aria-hidden="true"><span>01</span><span>LEARN BY DOING</span><span>REPEAT</span></div>
-    </section>
-
-    <section class="section wrap about-grid" id="about" aria-labelledby="about-title">
-      <div class="section-label"><span>01 / ABOUT</span><span class="label-mark">✳</span></div>
-      <div class="section-body">
-        <h2 id="about-title">A little bit of<br><em>everything,</em> on purpose.</h2>
-        <p>I'm studying Computer Science at North South University. Most days, that means working through code, learning more about Linux and networking, or trying to understand a system beyond the surface.</p>
-        <p>I prefer practical work over collecting buzzwords: small experiments, readable code, useful tools, and projects that teach me something real.</p>
-        <p class="aside-note">Currently based in Dhaka, Bangladesh.</p>
+  <main id="main" class="wrap">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <p class="cmd"><span class="ps1" aria-hidden="true">sarwar@dhaka:~$</span> whoami</p>
+      <p class="hero-name">Sarwar Uddin</p>
+      <p class="hero-role"><span aria-hidden="true"># </span>CSE student · Linux enthusiast · maker of things</p>
+      <h1 id="hero-title">Curious about how things work<span class="cursor" aria-hidden="true"></span></h1>
+      <p class="hero-copy">I like getting close to the machinery: learning the fundamentals, reading the source, and building things that last.</p>
+      <div class="hero-actions">
+        <a class="button" href="#projects"><span aria-hidden="true">$ </span>cd ~/projects</a>
+        <a class="button ghost" href="#contact"><span aria-hidden="true">$ </span>./contact</a>
       </div>
     </section>
 
-    <section class="section wrap work-section" id="work" aria-labelledby="work-title">
-      <div class="section-label"><span>02 / THE WORKBENCH</span><span class="label-mark">↘</span></div>
-      <div class="section-body">
-        <div class="work-heading">
-          <h2 id="work-title">Things in<br><em>progress.</em></h2>
-          <p>Projects are work in progress by definition. These are the ones occupying my time lately.</p>
+    <section class="section" id="about" aria-labelledby="about-title">
+      <h2 class="cmd" id="about-title"><span class="ps1" aria-hidden="true">~ $</span> cat about.md</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm studying Computer Science at North South University. Most days that means working through code, learning more about Linux and networking, or trying to understand a system below the surface.</p>
+          <p>I prefer practical work to collecting buzzwords: small experiments, readable code, useful tools, and projects that teach me something real.</p>
         </div>
-
-        <article class="project">
-          <div class="project-index">01</div>
-          <div class="project-main">
-            <div class="project-meta"><span>SOFTWARE / LEARNING PROJECT</span><span class="project-status"><i aria-hidden="true"></i> IN DEVELOPMENT</span></div>
-            <h3>Workshop</h3>
-            <p>An inventory and order management system built while learning TypeScript, React, backend design, PostgreSQL, testing, and deployment.</p>
-            <div class="tags"><span>TypeScript</span><span>React</span><span>Node.js</span><span>PostgreSQL</span><span>Docker</span></div>
-            <a class="text-link" href="https://github.com/sarwar-uddin/" target="_blank" rel="noreferrer">View repository <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="project-mark mark-terminal" aria-hidden="true"><span>$_</span></div>
-        </article>
-
-        <article class="project">
-          <div class="project-index">02</div>
-          <div class="project-main">
-            <div class="project-meta"><span>WEB / INDEPENDENT PROJECT</span><span class="project-status muted"><i aria-hidden="true"></i> IN PROGRESS</span></div>
-            <h3>Plumeria catalog</h3>
-            <p>A lean product catalog for plumeria trees and cuttings. A small, practical web project focused on clear product information and straightforward browsing.</p>
-            <div class="tags"><span>Astro</span><span>Content</span><span>Responsive web</span></div>
-            <span class="project-footnote">Repository link coming when it's public.</span>
-          </div>
-          <div class="project-mark mark-botanical" aria-hidden="true">✳</div>
-        </article>
-
-        <div class="coming-soon"><span class="coming-symbol">+</span><p><strong>More as I make it.</strong><br>Systems experiments, networking notes, and other useful rabbit holes.</p></div>
+        <figure class="fetch" aria-label="System summary">
+<pre class="fetch-logo" aria-hidden="true">███████╗██╗   ██╗
+██╔════╝██║   ██║
+███████╗██║   ██║
+╚════██║██║   ██║
+███████║╚██████╔╝
+╚══════╝ ╚═════╝ </pre>
+          <dl class="fetch-info">
+            <div class="fetch-title"><dt class="sr-only">user</dt><dd><b>sarwar</b>@<b>dhaka</b></dd></div>
+            <div><dt>role</dt><dd>CSE student</dd></div>
+            <div><dt>school</dt><dd>North South University</dd></div>
+            <div><dt>location</dt><dd>Dhaka, Bangladesh</dd></div>
+            <div><dt>os</dt><dd>Arch Linux</dd></div>
+            <div><dt>shell</dt><dd>zsh</dd></div>
+            <div><dt>focus</dt><dd>systems · networking · web</dd></div>
+            <div><dt>stack</dt><dd>TypeScript · React · Node · PostgreSQL</dd></div>
+          </dl>
+          <div class="swatches" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </figure>
       </div>
     </section>
 
-    <section class="section wrap elsewhere-grid" id="elsewhere" aria-labelledby="elsewhere-title">
-      <div class="section-label"><span>03 / OFFLINE HOURS</span><span class="label-mark">✳</span></div>
-      <div class="section-body">
-        <h2 id="elsewhere-title">Not everything<br>happens <em>on-screen.</em></h2>
-        <div class="interest-list">
-          <div><span class="interest-number">01</span><div><h3>Leathercraft</h3><p>Traditional handwork, vegetable-tanned leather, saddle stitching, and making useful objects meant to age well.</p></div></div>
-          <div><span class="interest-number">02</span><div><h3>Cinema</h3><p>Noir, crime films, patient cinematography, and stories that don't explain everything twice.</p></div></div>
-          <div><span class="interest-number">03</span><div><h3>Music</h3><p>Heavy, strange, atmospheric, or simply good enough to keep on repeat.</p></div></div>
-        </div>
-      </div>
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <h2 class="cmd" id="projects-title"><span class="ps1" aria-hidden="true">~ $</span> ls -l ~/projects</h2>
+      <p class="output-note">total 4 · things in progress, newest first</p>
+
+      <ol class="listing">
+        <li class="entry">
+          <div class="entry-head">
+            <span class="perm" aria-hidden="true">drwxr-xr-x</span>
+            <h3>sonic-archive/</h3>
+            <span class="state"><i aria-hidden="true"></i>active</span>
+          </div>
+          <p class="entry-kind">software · local-first app</p>
+          <p class="entry-desc">An album-centric catalog for a personal lossless music collection. It scans the library strictly read-only, keeps up with changes, and surfaces covers, rip logs, dynamic range, and metadata problems.</p>
+          <ul class="tags" aria-label="Technologies"><li>typescript</li><li>react</li><li>express</li><li>sqlite</li><li>drizzle</li></ul>
+          <a class="entry-link" href="https://github.com/sarwar-uddin/sonic-archive" target="_blank" rel="noreferrer">github.com/sarwar-uddin/sonic-archive <span aria-hidden="true">↗</span></a>
+        </li>
+
+        <li class="entry">
+          <div class="entry-head">
+            <span class="perm" aria-hidden="true">drwxr-xr-x</span>
+            <h3>newsroom/</h3>
+            <span class="state"><i aria-hidden="true"></i>active</span>
+          </div>
+          <p class="entry-kind">web · publishing platform</p>
+          <p class="entry-desc">A Bangla-first, multilingual local news platform designed around real editorial work: authors, revisions, corrections, media, and search, with PostgreSQL as the source of truth.</p>
+          <ul class="tags" aria-label="Technologies"><li>next.js</li><li>typescript</li><li>express</li><li>postgresql</li><li>docker</li></ul>
+          <a class="entry-link" href="https://github.com/sarwar-uddin/newsroom" target="_blank" rel="noreferrer">github.com/sarwar-uddin/newsroom <span aria-hidden="true">↗</span></a>
+        </li>
+
+        <li class="entry">
+          <div class="entry-head">
+            <span class="perm" aria-hidden="true">drwxr-xr-x</span>
+            <h3>workshop/</h3>
+            <span class="state"><i aria-hidden="true"></i>active</span>
+          </div>
+          <p class="entry-kind">software · learning project</p>
+          <p class="entry-desc">An inventory and order management system built while learning TypeScript, React, backend design, PostgreSQL, testing, and deployment.</p>
+          <ul class="tags" aria-label="Technologies"><li>typescript</li><li>react</li><li>node.js</li><li>postgresql</li><li>docker</li></ul>
+          <a class="entry-link" href="https://github.com/sarwar-uddin/workshop" target="_blank" rel="noreferrer">github.com/sarwar-uddin/workshop <span aria-hidden="true">↗</span></a>
+        </li>
+
+        <li class="entry">
+          <div class="entry-head">
+            <span class="perm" aria-hidden="true">drwx------</span>
+            <h3>plumeria-catalog/</h3>
+            <span class="state private"><i aria-hidden="true"></i>private</span>
+          </div>
+          <p class="entry-kind">web · independent project</p>
+          <p class="entry-desc">A lean product catalog for plumeria trees and cuttings, focused on clear product information and straightforward browsing.</p>
+          <ul class="tags" aria-label="Technologies"><li>astro</li><li>content</li><li>responsive web</li></ul>
+          <p class="entry-link muted">repository goes public when it's ready</p>
+        </li>
+      </ol>
+
+      <p class="comment"># coming up: a retro web radio, systems experiments, networking notes, and other useful rabbit holes.</p>
     </section>
 
-    <section class="contact-strip">
-      <div class="wrap contact-inner">
-        <p class="eyebrow">HAVE A GOOD PROJECT OR A GOOD QUESTION?</p>
-        <h2>Let's talk <em>shop.</em></h2>
-        <a class="contact-link" href="https://github.com/sarwar-uddin" target="_blank" rel="noreferrer">Find me on GitHub <span aria-hidden="true">↗</span></a>
+    <section class="section" id="offline" aria-labelledby="offline-title">
+      <h2 class="cmd" id="offline-title"><span class="ps1" aria-hidden="true">~ $</span> cat -n offline-hours.txt</h2>
+      <p class="output-note">not everything happens on-screen</p>
+      <ol class="lines">
+        <li><h3>leathercraft</h3><p>Traditional handwork, vegetable-tanned leather, saddle stitching, and useful objects meant to age well.</p></li>
+        <li><h3>cinema</h3><p>Noir, crime films, patient cinematography, and stories that don't explain everything twice.</p></li>
+        <li><h3>music</h3><p>Heavy, strange, atmospheric, or simply good enough to keep on repeat.</p></li>
+        <li><h3>diogenes' lamp</h3><p>A long-form narrated channel in the making: philosophy, forgotten history, and myth for the hours between waking and sleep. First episode in production.</p></li>
+      </ol>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <h2 class="cmd" id="contact-title"><span class="ps1" aria-hidden="true">~ $</span> contact --help</h2>
+      <p class="contact-big">Let's talk shop<span class="cursor" aria-hidden="true"></span></p>
+      <div class="usage">
+        <p>Usage: contact [OPTION]</p>
+        <p class="dim">Have a good project or a good question? Pick a channel.</p>
+        <dl>
+          <div><dt>-e, --email</dt><dd><a href="mailto:sarwaruddin@protonmail.com">sarwaruddin@protonmail.com</a></dd></div>
+          <div><dt>-g, --github</dt><dd><a href="https://github.com/sarwar-uddin" target="_blank" rel="noreferrer">github.com/sarwar-uddin <span aria-hidden="true">↗</span></a></dd></div>
+        </dl>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer wrap">
-    <a class="wordmark footer-mark" href="#top">Sarwar Uddin<span>.</span></a>
-    <p>Made slowly, with plain HTML and CSS.</p>
-    <p>© <span id="year">2026</span> Sarwar Uddin</p>
+  <footer class="footer wrap">
+    <p class="cmd"><span class="ps1" aria-hidden="true">~ $</span> logout</p>
+    <p>Made slowly, with plain HTML and CSS. © 2026 Sarwar Uddin</p>
+    <p class="dim" aria-hidden="true">[process completed]</p>
   </footer>
 </body>
 </html>
