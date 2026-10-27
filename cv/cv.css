@@ -9,7 +9,7 @@ html[data-lang="bn"] .cv-page :is(p:not(.cmd, .skim-stat), h1, h3, li, summary, 
 html[data-lang="bn"] .statusbar nav a {
   font-family: "Noto Sans Bengali", "Hind Siliguri", "SolaimanLipi", "Kalpurush", var(--mono);
 }
-html[data-lang="bn"] .cv-page p:not(.cmd, .fine, .contact-big, .skim-stat) { font-size: 16px; }
+html[data-lang="bn"] .cv-page p:not(.cmd, .fine, .contact-big, .skim-stat, .website-price) { font-size: 16px; }
 html[data-lang="bn"] h1 { letter-spacing: 0; line-height: 1.2; }
 
 .lang-switch { display: flex; margin-left: auto; border: 1px solid var(--line); }
@@ -60,6 +60,15 @@ html[data-lang="bn"] .section-title { font-family: "Noto Sans Bengali", "Hind Si
 .diff .del::before { content: "- "; }
 .diff .add::before { content: "+ "; }
 .ba-cta { margin-top: 32px; }
+
+/* personal website add-on */
+.website { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 40px; align-items: start; }
+.website-copy { max-width: 52ch; color: var(--soft); }
+.website-copy code { color: var(--text); }
+.website-price { margin: 22px 0 4px; color: var(--amber); font-size: 22px; font-weight: 700; }
+.website-preview img { display: block; width: 100%; height: auto; border: 1px solid var(--line); box-shadow: 0 10px 40px rgb(0 0 0 / .45); }
+.website-preview:hover img { border-color: var(--amber); }
+.faq details a { color: var(--amber); }
 
 /* why here */
 .why { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
@@ -118,7 +127,7 @@ html[data-lang="bn"] .section-title { font-family: "Noto Sans Bengali", "Hind Si
 
 @media (max-width: 760px) {
   .packages, .why { grid-template-columns: 1fr; }
-  .skim { grid-template-columns: 1fr; gap: 20px; }
+  .skim, .website { grid-template-columns: 1fr; gap: 20px; }
   .compare { gap: 12px; }
   .statusbar nav { display: none; }
   .wa-bar {
