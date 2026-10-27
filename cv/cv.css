@@ -5,11 +5,11 @@ html[data-lang="en"] span[lang="bn"],
 html[data-lang="bn"] span[lang="en"] { display: none; }
 
 /* Bangla reads better a little larger, in a proportional font. */
-html[data-lang="bn"] .cv-page :is(p:not(.cmd), h1, h3, figcaption, .button),
+html[data-lang="bn"] .cv-page :is(p:not(.cmd, .skim-stat), h1, h3, li, summary, figcaption, .button),
 html[data-lang="bn"] .statusbar nav a {
   font-family: "Noto Sans Bengali", "Hind Siliguri", "SolaimanLipi", "Kalpurush", var(--mono);
 }
-html[data-lang="bn"] .cv-page p:not(.cmd, .fine, .contact-big) { font-size: 16px; }
+html[data-lang="bn"] .cv-page p:not(.cmd, .fine, .contact-big, .skim-stat) { font-size: 16px; }
 html[data-lang="bn"] h1 { letter-spacing: 0; line-height: 1.2; }
 
 .lang-switch { display: flex; margin-left: auto; border: 1px solid var(--line); }
@@ -32,6 +32,46 @@ html[data-lang="bn"] .section-title { font-family: "Noto Sans Bengali", "Hind Si
 
 /* WhatsApp bar: phones only. */
 .wa-bar { display: none; }
+
+/* 6 seconds */
+.skim { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 48px; align-items: start; }
+.skim-stat { color: var(--amber); font-size: clamp(96px, 16vw, 168px); font-weight: 700; line-height: .8; letter-spacing: -.06em; }
+.skim-stat span { margin-left: .05em; color: var(--muted); font-size: .35em; letter-spacing: 0; }
+.skim-copy { max-width: 58ch; color: var(--soft); }
+.skim-lead { margin-top: 22px; color: var(--text); }
+.skim-list { margin: 8px 0 0; padding: 0; max-width: 58ch; list-style: none; }
+.skim-list li { padding: 7px 0; border-bottom: 1px dashed var(--line); color: var(--soft); }
+.skim-list li::before { content: "→ "; color: var(--amber); }
+
+/* before / after */
+.compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; max-width: 780px; }
+.compare figure { display: flex; flex-direction: column; gap: 10px; }
+.compare img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #fff; }
+.compare a:hover img { border-color: var(--amber); }
+.compare figcaption { color: var(--muted); font-size: 13px; }
+.tag { margin-right: 6px; padding: 1px 7px; color: var(--bg); font-weight: 700; }
+.before .tag { background: var(--red); }
+.after .tag { background: var(--green); }
+.diff { margin: 36px 0 0; padding: 0; max-width: 780px; list-style: none; }
+.diff li { padding: 10px 0; border-bottom: 1px dashed var(--line); }
+.diff p { padding-left: 2ch; text-indent: -2ch; }
+.diff .del { color: var(--red); }
+.diff .add { color: var(--green); }
+.diff .del::before { content: "- "; }
+.diff .add::before { content: "+ "; }
+.ba-cta { margin-top: 32px; }
+
+/* why here */
+.why { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 0; padding: 0; list-style: none; }
+.why li { display: flex; flex-direction: column; gap: 8px; padding: 20px; border: 1px solid var(--line); background: var(--panel); }
+.why h3 { color: var(--text); font-size: 15px; }
+.why h3::before { content: "› "; color: var(--amber); }
+.why p { color: var(--soft); font-size: 14px; }
+.why .why-pay { border-color: var(--green); }
+.why .why-pay h3::before { color: var(--green); }
+
+.pay-terms { margin-top: 24px; padding: 14px 18px; border-left: 2px solid var(--green); background: var(--panel); color: var(--soft); }
+.pay-terms strong { color: var(--text); }
 
 /* packages */
 .packages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 0; list-style: none; }
@@ -58,15 +98,28 @@ html[data-lang="bn"] .section-title { font-family: "Noto Sans Bengali", "Hind Si
 
 .privacy { max-width: 62ch; color: var(--soft); }
 
+/* faq */
+.faq { max-width: 780px; border-top: 1px dashed var(--line); }
+.faq details { border-bottom: 1px dashed var(--line); }
+.faq summary { display: flex; gap: 1ch; padding: 14px 0; color: var(--text); cursor: pointer; list-style: none; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::before { content: "+"; flex: none; color: var(--amber); }
+.faq details[open] summary::before { content: "−"; }
+.faq summary:hover { color: var(--amber); }
+.faq summary:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+.faq details p { max-width: 62ch; padding: 0 0 16px 2ch; color: var(--soft); }
+
 .cv-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
 .cv-cta .fine { margin-top: 0; }
 
 @media (max-width: 900px) {
-  .samples { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .samples, .why { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 760px) {
-  .packages { grid-template-columns: 1fr; }
+  .packages, .why { grid-template-columns: 1fr; }
+  .skim { grid-template-columns: 1fr; gap: 20px; }
+  .compare { gap: 12px; }
   .statusbar nav { display: none; }
   .wa-bar {
     position: fixed; right: 12px; bottom: 12px; left: 12px; z-index: 15;

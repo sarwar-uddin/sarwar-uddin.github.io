@@ -29,9 +29,11 @@
     <div class="statusbar-inner">
       <a class="session" href="../" aria-label="Sarwar Uddin, home">sarwar</a>
       <nav aria-label="Page sections">
+        <a href="#before-after"><span lang="en">before/after</span><span lang="bn">আগে/পরে</span></a>
         <a href="#packages"><span lang="en">packages</span><span lang="bn">প্যাকেজ</span></a>
         <a href="#samples"><span lang="en">samples</span><span lang="bn">নমুনা</span></a>
         <a href="#how"><span lang="en">how it works</span><span lang="bn">কীভাবে</span></a>
+        <a href="#faq"><span lang="en">faq</span><span lang="bn">প্রশ্ন</span></a>
       </nav>
       <div class="lang-switch" role="group" aria-label="Language / ভাষা">
         <button type="button" data-set-lang="en" lang="en">EN</button>
@@ -61,6 +63,113 @@
         <span lang="en">CSE student in Dhaka. Every CV is written by me, not a template generator.</span>
         <span lang="bn">ঢাকার একজন CSE শিক্ষার্থী। প্রতিটি সিভি আমি নিজে লিখি, কোনো টেমপ্লেট জেনারেটর দিয়ে নয়।</span>
       </p>
+    </section>
+
+    <section class="section" id="six-seconds" aria-labelledby="six-title">
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> time skim cv.pdf</p>
+      <h2 class="section-title" id="six-title"><span lang="en">Your CV gets about 6 seconds</span><span lang="bn">আপনার সিভির হাতে মাত্র ৬ সেকেন্ড</span></h2>
+      <div class="skim">
+        <p class="skim-stat" aria-hidden="true">6<span>s</span></p>
+        <div>
+          <p class="skim-copy">
+            <span lang="en">Recruiters skim before they read. Eye-tracking studies found they spend about 6–7 seconds on a CV at first look, then decide whether to read the rest. A cluttered page loses that moment, however good the person behind it.</span>
+            <span lang="bn">রিক্রুটাররা আগে চোখ বোলান, তারপর পড়েন। আই-ট্র্যাকিং গবেষণায় দেখা গেছে, প্রথম দেখায় তাঁরা একটি সিভিতে গড়ে ৬–৭ সেকেন্ড সময় দেন, তারপর ঠিক করেন বাকিটা পড়বেন কি না। এলোমেলো সিভি সেই মুহূর্তটা হারায়, মানুষটা যত যোগ্যই হোক।</span>
+          </p>
+          <p class="skim-lead"><span lang="en">In those seconds, they look for:</span><span lang="bn">ওই কয়েক সেকেন্ডে তাঁরা খোঁজেন:</span></p>
+          <ul class="skim-list">
+            <li><span lang="en">who you are and the role you want</span><span lang="bn">আপনি কে, আর কোন পদ চান</span></li>
+            <li><span lang="en">your latest degree or job</span><span lang="bn">আপনার সর্বশেষ ডিগ্রি বা চাকরি</span></li>
+            <li><span lang="en">the skills that match the job</span><span lang="bn">চাকরির সঙ্গে মেলে এমন দক্ষতা</span></li>
+            <li><span lang="en">whether the page is easy to scan</span><span lang="bn">পাতাটায় সহজে চোখ বোলানো যায় কি না</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="fine">
+        <span lang="en">Source: Ladders recruiter eye-tracking study (about 6 seconds in 2012, 7.4 seconds in the 2018 update).</span>
+        <span lang="bn">সূত্র: Ladders-এর রিক্রুটার আই-ট্র্যাকিং গবেষণা (২০১২ সালে প্রায় ৬ সেকেন্ড, ২০১৮ সালের আপডেটে ৭.৪ সেকেন্ড)।</span>
+      </p>
+    </section>
+
+    <section class="section" id="before-after" aria-labelledby="ba-title">
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> diff before.pdf after.pdf</p>
+      <h2 class="section-title" id="ba-title"><span lang="en">Same person. Same details. Different CV.</span><span lang="bn">একই মানুষ, একই তথ্য, ভিন্ন সিভি।</span></h2>
+      <p class="output-note">
+        <span lang="en">Tanvir is fictional, but his “before” CV looks like hundreds sent out every day. Even this small, you can tell which one gets read.</span>
+        <span lang="bn">তানভীর কাল্পনিক, কিন্তু তার “আগের” সিভির মতো সিভি প্রতিদিন শত শত জমা পড়ে। এত ছোট আকারেও বোঝা যায়, কোনটা পড়া হবে।</span>
+      </p>
+      <div class="compare">
+        <figure class="before">
+          <a href="samples/before-tanvir.pdf" target="_blank" rel="noreferrer">
+            <img src="samples/before-tanvir.webp" width="600" height="848" loading="lazy" alt="Before: Tanvir's CV in a typical template, with a generic career objective, a results table, a long skills list, vague experience and hobbies">
+          </a>
+          <figcaption><span class="tag"><span lang="en">before</span><span lang="bn">আগে</span></span> <span lang="en">typical template</span><span lang="bn">সাধারণ টেমপ্লেট</span></figcaption>
+        </figure>
+        <figure class="after">
+          <a href="samples/fresher-cse.pdf" target="_blank" rel="noreferrer">
+            <img src="samples/fresher-cse.webp" width="600" height="848" loading="lazy" alt="After: the same details as a clean CV with a short profile, education, projects, internship and grouped skills">
+          </a>
+          <figcaption><span class="tag"><span lang="en">after</span><span lang="bn">পরে</span></span> <span lang="en">made here</span><span lang="bn">এখানে তৈরি</span></figcaption>
+        </figure>
+      </div>
+      <ul class="diff" aria-label="What changed">
+        <li>
+          <p class="del"><span lang="en">A “career objective” that could belong to anyone</span><span lang="bn">যে কারও হতে পারে এমন “ক্যারিয়ার অবজেক্টিভ”</span></p>
+          <p class="add"><span lang="en">A short profile: what he builds, and the role he wants</span><span lang="bn">ছোট একটি প্রোফাইল: সে কী বানাতে পারে, আর কোন পদ চায়</span></p>
+        </li>
+        <li>
+          <p class="del"><span lang="en">Internship and projects squeezed into one vague line</span><span lang="bn">ইন্টার্নশিপ আর প্রজেক্ট এক লাইনে, অস্পষ্টভাবে লেখা</span></p>
+          <p class="add"><span lang="en">Projects and internship up front, with what he built and the results</span><span lang="bn">প্রজেক্ট ও ইন্টার্নশিপ সামনে, কী বানিয়েছে আর কী ফল পেয়েছে সহ</span></p>
+        </li>
+        <li>
+          <p class="del"><span lang="en">“Participated in various activities”, hobbies and “references on request” as filler</span><span lang="bn">“বিভিন্ন কার্যক্রমে অংশ নিয়েছি”, শখ আর “রেফারেন্স চাইলে দেওয়া হবে” দিয়ে জায়গা ভরানো</span></p>
+          <p class="add"><span lang="en">Club work written as what he actually did: ran Git and web workshops</span><span lang="bn">ক্লাবের কাজ লেখা হয়েছে আসলে যা করেছে সেভাবে: Git ও ওয়েব ওয়ার্কশপ পরিচালনা</span></p>
+        </li>
+        <li>
+          <p class="del"><span lang="en">One long list of skills, from MS Word to Docker</span><span lang="bn">MS Word থেকে Docker পর্যন্ত দক্ষতার একটা লম্বা তালিকা</span></p>
+          <p class="add"><span lang="en">Skills grouped, so the right ones stand out</span><span lang="bn">দক্ষতা ভাগ করে সাজানো, যাতে দরকারিগুলো চোখে পড়ে</span></p>
+        </li>
+        <li>
+          <p class="del"><span lang="en">Grey boxes, underlines and tables that job portals often read badly</span><span lang="bn">ধূসর বক্স, আন্ডারলাইন আর টেবিল, যা জব পোর্টাল প্রায়ই ঠিকমতো পড়তে পারে না</span></p>
+          <p class="add"><span lang="en">One clean layout, sharp on screen and on paper</span><span lang="bn">একটাই পরিষ্কার লেআউট, স্ক্রিনে ও প্রিন্টে ঝকঝকে</span></p>
+        </li>
+      </ul>
+      <div class="hero-actions ba-cta">
+        <a class="button whatsapp" data-wa href="https://wa.me/8801710361756" target="_blank" rel="noreferrer">
+          <span lang="en">I want mine like this</span><span lang="bn">আমারটাও এমন চাই</span>
+        </a>
+        <a class="button ghost" href="#packages"><span lang="en">See prices</span><span lang="bn">দাম দেখুন</span></a>
+      </div>
+    </section>
+
+    <section class="section" id="why" aria-labelledby="why-title">
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> cat why.txt</p>
+      <h2 class="section-title" id="why-title"><span lang="en">Why get your CV made here</span><span lang="bn">কেন এখানে সিভি বানাবেন</span></h2>
+      <ul class="why">
+        <li>
+          <h3><span lang="en">Written by a person</span><span lang="bn">একজন মানুষের লেখা</span></h3>
+          <p><span lang="en">I read your details and write for the jobs you’re applying to. No template generator, no copy-paste.</span><span lang="bn">আপনার তথ্য পড়ে, আপনি যে চাকরিতে আবেদন করছেন সেটা মাথায় রেখে লিখি। কোনো টেমপ্লেট জেনারেটর বা কপি-পেস্ট নয়।</span></p>
+        </li>
+        <li>
+          <h3><span lang="en">Modern, professional design</span><span lang="bn">আধুনিক, প্রফেশনাল ডিজাইন</span></h3>
+          <p><span lang="en">A clean, structured layout made in LaTeX, the typesetting used for research papers. Sharp on screen, crisp on paper.</span><span lang="bn">LaTeX দিয়ে তৈরি গোছানো, পরিষ্কার লেআউট, যে টাইপসেটিং দিয়ে গবেষণাপত্র তৈরি হয়। স্ক্রিনে ঝকঝকে, প্রিন্টেও নিখুঁত।</span></p>
+        </li>
+        <li>
+          <h3><span lang="en">Works with job portals</span><span lang="bn">জব পোর্টালেও চলে</span></h3>
+          <p><span lang="en">Uploading to a portal or an applicant-tracking system? Ask for the ATS-friendly style: a plain structure that software reads correctly.</span><span lang="bn">পোর্টাল বা ATS-এ আপলোড করবেন? ATS-বান্ধব স্টাইল চেয়ে নিন: সহজ কাঠামো, যা সফটওয়্যার ঠিকমতো পড়তে পারে।</span></p>
+        </li>
+        <li>
+          <h3><span lang="en">First draft in 1–2 days</span><span lang="bn">১–২ দিনে প্রথম খসড়া</span></h3>
+          <p><span lang="en">Deadline coming up? You’ll have a draft to review within a day or two, often sooner.</span><span lang="bn">আবেদনের শেষ তারিখ কাছে? এক-দুই দিনের মধ্যেই খসড়া হাতে পাবেন, অনেক সময় আরও আগে।</span></p>
+        </li>
+        <li class="why-pay">
+          <h3><span lang="en">Half now, half when it’s done</span><span lang="bn">অর্ধেক এখন, বাকিটা শেষে</span></h3>
+          <p><span lang="en">Pay half to start and the rest after you get the final draft, by bKash or Nagad.</span><span lang="bn">শুরুতে অর্ধেক, ফাইনাল ড্রাফট পাওয়ার পর বাকি অর্ধেক। বিকাশ বা নগদে।</span></p>
+        </li>
+        <li>
+          <h3><span lang="en">Yours to keep</span><span lang="bn">পুরোটাই আপনার</span></h3>
+          <p><span lang="en">You get the PDF, plus the editable source file if you want it, so you can update it later.</span><span lang="bn">PDF তো পাবেনই, চাইলে এডিট করার সোর্স ফাইলও, যাতে পরে নিজেই আপডেট করতে পারেন।</span></p>
+        </li>
+      </ul>
     </section>
 
     <section class="section" id="packages" aria-labelledby="packages-title">
@@ -201,9 +310,9 @@
           <p><span lang="en">I make the changes and send the finished CV, ready to upload or print.</span><span lang="bn">পরিবর্তন করে তৈরি সিভি পাঠাই, আপলোড বা প্রিন্টের জন্য প্রস্তুত।</span></p>
         </li>
       </ol>
-      <p class="fine">
-        <span lang="en">Payment by bKash or Nagad.</span>
-        <span lang="bn">পেমেন্ট বিকাশ বা নগদে।</span>
+      <p class="pay-terms">
+        <span lang="en"><strong>Payment:</strong> half to start, the other half after you get the final draft. By bKash or Nagad.</span>
+        <span lang="bn"><strong>পেমেন্ট:</strong> শুরুতে অর্ধেক, ফাইনাল ড্রাফট পাওয়ার পর বাকি অর্ধেক। বিকাশ বা নগদে।</span>
       </p>
     </section>
 
@@ -214,6 +323,41 @@
         <span lang="en">Your details are used only to make your CV. I don't share them, and I delete them after delivery unless you ask me to keep them for future updates.</span>
         <span lang="bn">আপনার তথ্য শুধু আপনার সিভি তৈরিতেই ব্যবহার হয়। আমি কারও সাথে শেয়ার করি না, আর ডেলিভারির পর মুছে ফেলি, যদি না পরে আপডেটের জন্য রেখে দিতে বলেন।</span>
       </p>
+    </section>
+
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> cat faq.txt</p>
+      <h2 class="section-title" id="faq-title"><span lang="en">Questions</span><span lang="bn">সাধারণ প্রশ্ন</span></h2>
+      <div class="faq">
+        <details>
+          <summary><span lang="en">I’m a fresher with no job experience. Can you still make a good CV?</span><span lang="bn">আমি ফ্রেশার, চাকরির অভিজ্ঞতা নেই। তবুও কি ভালো সিভি হবে?</span></summary>
+          <p><span lang="en">Yes, that’s exactly who this is for. Projects, your thesis, internships, club work, competitions and volunteering all count. I’ll help you find them and write them so they show what you can do.</span><span lang="bn">হ্যাঁ, এই সার্ভিস মূলত আপনাদের জন্যই। প্রজেক্ট, থিসিস, ইন্টার্নশিপ, ক্লাবের কাজ, প্রতিযোগিতা, স্বেচ্ছাসেবা, সবই কাজে লাগে। এগুলো খুঁজে বের করে এমনভাবে লিখব, যাতে বোঝা যায় আপনি কী পারেন।</span></p>
+        </details>
+        <details>
+          <summary><span lang="en">What do I need to send?</span><span lang="bn">আমাকে কী কী পাঠাতে হবে?</span></summary>
+          <p><span lang="en">Your current CV if you have one. If not, your education, projects, experience and skills, in any format, even a voice note. Also the job or circular you’re aiming for, and a photo if you want one on the CV.</span><span lang="bn">থাকলে আপনার বর্তমান সিভি। না থাকলে পড়াশোনা, প্রজেক্ট, অভিজ্ঞতা আর দক্ষতার তথ্য, যেভাবে সুবিধা, ভয়েস মেসেজেও চলবে। সঙ্গে যে চাকরি বা সার্কুলারের জন্য আবেদন করবেন সেটা, আর সিভিতে ছবি চাইলে একটি ছবি।</span></p>
+        </details>
+        <details>
+          <summary><span lang="en">Should my CV have a photo?</span><span lang="bn">সিভিতে কি ছবি দেওয়া উচিত?</span></summary>
+          <p><span lang="en">It depends on where you apply. Many local employers expect one; international applications and online portals usually work better without. I’ll suggest what fits, and you decide.</span><span lang="bn">কোথায় আবেদন করছেন তার ওপর নির্ভর করে। দেশের অনেক প্রতিষ্ঠান ছবি আশা করে, আবার বিদেশে আবেদন বা অনলাইন পোর্টালে সাধারণত ছবি ছাড়াই ভালো। কোনটা মানাবে আমি পরামর্শ দেব, সিদ্ধান্ত আপনার।</span></p>
+        </details>
+        <details>
+          <summary><span lang="en">Will it work on job sites and company portals?</span><span lang="bn">জব সাইট বা কোম্পানির পোর্টালে কি চলবে?</span></summary>
+          <p><span lang="en">Yes. You get a PDF that uploads anywhere. For portals that read your CV automatically, choose the ATS-friendly style. Some sites also ask you to fill in a profile form; you can copy the text straight from your CV.</span><span lang="bn">হ্যাঁ। আপনি PDF পাবেন, যেকোনো জায়গায় আপলোড করা যায়। যেসব পোর্টাল সিভি নিজে থেকে পড়ে নেয়, সেখানে ATS-বান্ধব স্টাইল নিন। কিছু সাইটে আলাদা প্রোফাইল ফর্মও পূরণ করতে হয়, সেখানে সিভি থেকে সরাসরি লেখা কপি করে নিতে পারবেন।</span></p>
+        </details>
+        <details>
+          <summary><span lang="en">Can I ask for changes?</span><span lang="bn">পরিবর্তন চাইতে পারব?</span></summary>
+          <p><span lang="en">Yes. You read the first draft and tell me what to change before anything is final. You pay the second half only after you get the final draft.</span><span lang="bn">অবশ্যই। প্রথম খসড়া পড়ে জানাবেন কী বদলাতে হবে, তারপরই ফাইনাল হবে। ফাইনাল ড্রাফট হাতে পাওয়ার পরই বাকি অর্ধেক টাকা দেবেন।</span></p>
+        </details>
+        <details>
+          <summary><span lang="en">Can I edit it myself later? Do I get a Word file?</span><span lang="bn">পরে কি নিজে এডিট করতে পারব? Word ফাইল পাব?</span></summary>
+          <p><span lang="en">You get a PDF, and the editable LaTeX source if you want it. You can open it for free in Overleaf, an online editor, or message me when you need an update. If an employer specifically asks for a Word file, tell me before we start.</span><span lang="bn">আপনি PDF পাবেন, চাইলে এডিট করার মতো LaTeX সোর্স ফাইলও। সেটা অনলাইন এডিটর Overleaf-এ বিনামূল্যে খোলা যায়, অথবা আপডেট দরকার হলে আমাকে মেসেজ দিন। কোনো প্রতিষ্ঠান যদি নির্দিষ্টভাবে Word ফাইল চায়, কাজ শুরুর আগেই জানাবেন।</span></p>
+        </details>
+        <details>
+          <summary><span lang="en">My deadline is close. Can you do it quickly?</span><span lang="bn">আবেদনের শেষ তারিখ কাছে। তাড়াতাড়ি করা যাবে?</span></summary>
+          <p><span lang="en">Tell me your deadline when you message. First drafts usually take 1–2 days, often less, and I’ll tell you honestly if I can make it in time.</span><span lang="bn">মেসেজ দেওয়ার সময়ই শেষ তারিখটা জানান। প্রথম খসড়া সাধারণত ১–২ দিনে হয়, অনেক সময় আরও কম। সময়মতো দিতে পারব কি না, সেটা আমি সোজাসুজি জানিয়ে দেব।</span></p>
+        </details>
+      </div>
     </section>
 
     <section class="section cv-cta" aria-labelledby="cta-title">
