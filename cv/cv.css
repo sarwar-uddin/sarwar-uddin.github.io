@@ -1,0 +1,76 @@
+/* The CV service page. Builds on ../styles.css. */
+
+/* One language at a time: text carries lang="en" or lang="bn". */
+html[data-lang="en"] span[lang="bn"],
+html[data-lang="bn"] span[lang="en"] { display: none; }
+
+/* Bangla reads better a little larger, in a proportional font. */
+html[data-lang="bn"] .cv-page :is(p:not(.cmd), h1, h3, figcaption, .button),
+html[data-lang="bn"] .statusbar nav a {
+  font-family: "Noto Sans Bengali", "Hind Siliguri", "SolaimanLipi", "Kalpurush", var(--mono);
+}
+html[data-lang="bn"] .cv-page p:not(.cmd, .fine, .contact-big) { font-size: 16px; }
+html[data-lang="bn"] h1 { letter-spacing: 0; line-height: 1.2; }
+
+.lang-switch { display: flex; margin-left: auto; border: 1px solid var(--line); }
+.lang-switch button { padding: 1px 10px; border: 0; background: none; color: var(--muted); font: inherit; cursor: pointer; }
+.lang-switch button[aria-pressed="true"] { background: var(--line); color: var(--text); }
+.lang-switch button:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+.cv-hero { padding-bottom: 80px; }
+.cv-page h1 { max-width: 16ch; }
+.fine { margin-top: 20px; color: var(--muted); font-size: 13px; }
+
+.button.whatsapp { border-color: var(--green); background: var(--green); }
+.button.whatsapp:hover { background: transparent; color: var(--green); }
+
+/* Section titles in plain words, with the terminal command as decoration above. */
+.cmd.deco { color: var(--muted); font-size: 13px; }
+.section-title { margin: 6px 0 24px; color: var(--text); font-size: clamp(24px, 4vw, 34px); font-weight: 700; letter-spacing: -.02em; }
+html[data-lang="bn"] .section-title { font-family: "Noto Sans Bengali", "Hind Siliguri", "SolaimanLipi", "Kalpurush", var(--mono); letter-spacing: 0; }
+.section-title + .output-note { margin-top: -12px; }
+
+/* WhatsApp bar: phones only. */
+.wa-bar { display: none; }
+
+/* packages */
+.packages { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding: 0; list-style: none; }
+.package { display: flex; flex-direction: column; gap: 10px; padding: 20px; border: 1px solid var(--line); background: var(--panel); }
+.package h3 { color: var(--text); font-size: 15px; }
+.package .price { color: var(--amber); font-size: 26px; font-weight: 700; }
+.package p:last-child { color: var(--soft); font-size: 14px; }
+.package.featured { border-color: var(--amber); }
+
+/* samples */
+.samples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.samples figure { display: flex; flex-direction: column; gap: 10px; }
+.samples img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #fff; }
+.samples a:hover img { border-color: var(--amber); }
+.samples figcaption { color: var(--muted); font-size: 13px; }
+.samples figcaption a { color: var(--amber); }
+
+/* reviews (shown once there are real ones) */
+.reviews { display: grid; gap: 16px; }
+.review { padding: 18px 20px; border-left: 2px solid var(--green); background: var(--panel); }
+.review blockquote { margin: 0; color: var(--text); }
+.review figcaption { margin-top: 8px; color: var(--muted); font-size: 13px; }
+
+.privacy { max-width: 62ch; color: var(--soft); }
+
+.cv-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
+.cv-cta .fine { margin-top: 0; }
+
+@media (max-width: 760px) {
+  .packages, .samples { grid-template-columns: 1fr; }
+  .statusbar nav { display: none; }
+  .wa-bar {
+    position: fixed; right: 12px; bottom: 12px; left: 12px; z-index: 15;
+    display: block; padding: 12px 16px;
+    background: var(--green); color: var(--bg);
+    font-weight: 700; text-align: center; text-decoration: none;
+    box-shadow: 0 6px 24px rgb(0 0 0 / .5);
+  }
+  html[data-lang="bn"] .wa-bar { font-family: "Noto Sans Bengali", "Hind Siliguri", "SolaimanLipi", "Kalpurush", var(--mono); }
+  /* Room for the bar at the end of the page. */
+  .footer { padding-bottom: 80px; }
+}

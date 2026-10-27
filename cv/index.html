@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0d0b">
+  <meta name="description" content="Clean, professional CVs made in LaTeX for students, fresh graduates and early-career people in Bangladesh. Message Sarwar on WhatsApp.">
+  <title>CV writing · Sarwar Uddin</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="cv.css">
+  <script>
+    // Language: a saved choice, else Bangla for Bangla browsers, else English.
+    (function () {
+      var lang = null;
+      try { lang = localStorage.getItem('cv-lang'); } catch (e) {}
+      if (lang !== 'en' && lang !== 'bn') {
+        lang = /^bn\b/i.test(navigator.language || '') ? 'bn' : 'en';
+      }
+      document.documentElement.dataset.lang = lang;
+      document.documentElement.lang = lang;
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="statusbar">
+    <div class="statusbar-inner">
+      <a class="session" href="../" aria-label="Sarwar Uddin, home">sarwar</a>
+      <nav aria-label="Page sections">
+        <a href="#packages"><span lang="en">packages</span><span lang="bn">প্যাকেজ</span></a>
+        <a href="#samples"><span lang="en">samples</span><span lang="bn">নমুনা</span></a>
+        <a href="#how"><span lang="en">how it works</span><span lang="bn">কীভাবে</span></a>
+      </nav>
+      <div class="lang-switch" role="group" aria-label="Language / ভাষা">
+        <button type="button" data-set-lang="en" lang="en">EN</button>
+        <button type="button" data-set-lang="bn" lang="bn">বাংলা</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="wrap cv-page">
+    <section class="hero cv-hero" aria-labelledby="cv-title">
+      <p class="cmd"><span class="ps1" aria-hidden="true">sarwar@dhaka:~$</span> make cv</p>
+      <h1 id="cv-title">
+        <span lang="en">A CV that gets read<span class="cursor" aria-hidden="true"></span></span>
+        <span lang="bn">যে সিভি পড়া হয়<span class="cursor" aria-hidden="true"></span></span>
+      </h1>
+      <p class="hero-copy">
+        <span lang="en">I write and design clean, professional CVs in LaTeX for students, fresh graduates and people early in their careers. Clear structure, honest wording, and a layout that looks sharp on screen and on paper.</span>
+        <span lang="bn">শিক্ষার্থী, সদ্য গ্র্যাজুয়েট ও ক্যারিয়ারের শুরুতে থাকা সবার জন্য আমি LaTeX দিয়ে পরিষ্কার, প্রফেশনাল সিভি লিখি ও সাজাই। গোছানো কাঠামো, সৎ ভাষা, আর এমন লেআউট যা স্ক্রিনে ও প্রিন্টে দুই জায়গাতেই সুন্দর দেখায়।</span>
+      </p>
+      <div class="hero-actions">
+        <a class="button whatsapp" data-wa href="https://wa.me/8801710361756" target="_blank" rel="noreferrer">
+          <span lang="en">Message me on WhatsApp</span><span lang="bn">হোয়াটসঅ্যাপে মেসেজ দিন</span>
+        </a>
+        <a class="button ghost" href="#packages"><span lang="en">See prices</span><span lang="bn">দাম দেখুন</span></a>
+      </div>
+      <p class="fine">
+        <span lang="en">CSE student in Dhaka. Every CV is written by me, not a template generator.</span>
+        <span lang="bn">ঢাকার একজন CSE শিক্ষার্থী। প্রতিটি সিভি আমি নিজে লিখি, কোনো টেমপ্লেট জেনারেটর দিয়ে নয়।</span>
+      </p>
+    </section>
+
+    <section class="section" id="packages" aria-labelledby="packages-title">
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> cat packages.txt</p>
+      <h2 class="section-title" id="packages-title"><span lang="en">Packages &amp; prices</span><span lang="bn">প্যাকেজ ও দাম</span></h2>
+      <ol class="packages">
+        <li class="package">
+          <h3><span lang="en">CV polish</span><span lang="bn">সিভি পলিশ</span></h3>
+          <p class="price">৳500</p>
+          <p>
+            <span lang="en">You already have a CV. I rebuild it in a clean LaTeX layout, fix the wording, structure and mistakes, and make it read well.</span>
+            <span lang="bn">আপনার আগে থেকেই সিভি আছে। আমি সেটা পরিষ্কার LaTeX লেআউটে নতুন করে সাজাই, ভাষা, কাঠামো ও ভুল ঠিক করি।</span>
+          </p>
+        </li>
+        <li class="package featured">
+          <h3><span lang="en">Fresher CV</span><span lang="bn">ফ্রেশার সিভি</span></h3>
+          <p class="price">৳1,000–1,200</p>
+          <p>
+            <span lang="en">Written from scratch from your details: education, projects, internships, skills. One round of changes included.</span>
+            <span lang="bn">আপনার তথ্য থেকে শুরু থেকে লেখা: পড়াশোনা, প্রজেক্ট, ইন্টার্নশিপ, দক্ষতা। একবার সংশোধন অন্তর্ভুক্ত।</span>
+          </p>
+        </li>
+        <li class="package">
+          <h3><span lang="en">CV + cover letter + LinkedIn</span><span lang="bn">সিভি + কভার লেটার + লিংকডইন</span></h3>
+          <p class="price">৳1,500–2,000</p>
+          <p>
+            <span lang="en">The full set: a new CV, a cover letter you can adapt for each job, and tips to bring your LinkedIn profile in line.</span>
+            <span lang="bn">পুরো সেট: নতুন সিভি, প্রতিটি চাকরির জন্য বদলে নেওয়া যায় এমন কভার লেটার, আর লিংকডইন প্রোফাইল ঠিক করার পরামর্শ।</span>
+          </p>
+        </li>
+      </ol>
+      <p class="fine">
+        <span lang="en">The price within a range depends on how much there is to write. You get a PDF, plus the editable source if you want it.</span>
+        <span lang="bn">কতটা লিখতে হবে তার ওপর দাম নির্ভর করে। আপনি PDF পাবেন, চাইলে এডিট করার মতো সোর্স ফাইলও।</span>
+      </p>
+    </section>
+
+    <section class="section" id="samples" aria-labelledby="samples-title">
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> ls samples/</p>
+      <h2 class="section-title" id="samples-title"><span lang="en">Sample CVs</span><span lang="bn">নমুনা সিভি</span></h2>
+      <p class="output-note">
+        <span lang="en">Fictional people, real layout: this is what you get.</span>
+        <span lang="bn">কাল্পনিক মানুষ, আসল লেআউট: আপনি ঠিক এমনটাই পাবেন।</span>
+      </p>
+      <div class="samples">
+        <figure>
+          <a href="samples/fresher-cse.pdf" target="_blank" rel="noreferrer">
+            <img src="samples/fresher-cse.webp" width="600" height="848" loading="lazy" alt="Sample CV for a fictional fresh CSE graduate">
+          </a>
+          <figcaption><span lang="en">Fresh CSE graduate</span><span lang="bn">সদ্য পাস করা CSE গ্র্যাজুয়েট</span> · <a href="samples/fresher-cse.pdf" target="_blank" rel="noreferrer">PDF</a></figcaption>
+        </figure>
+        <figure>
+          <a href="samples/marketing-executive.pdf" target="_blank" rel="noreferrer">
+            <img src="samples/marketing-executive.webp" width="600" height="848" loading="lazy" alt="Sample CV for a fictional marketing executive">
+          </a>
+          <figcaption><span lang="en">Marketing executive, 3 years</span><span lang="bn">মার্কেটিং এক্সিকিউটিভ, ৩ বছর</span> · <a href="samples/marketing-executive.pdf" target="_blank" rel="noreferrer">PDF</a></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!--
+      Reviews: shown only when there are real ones. To add one, copy the
+      <figure> below, fill it in, and remove the `hidden` attribute from the
+      section. Only quote people who agreed to it, with their first name and role.
+
+    <section class="section" id="reviews" aria-labelledby="reviews-title" hidden>
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> cat reviews.txt</p>
+      <h2 class="section-title" id="reviews-title"><span lang="en">What people say</span><span lang="bn">যারা সিভি নিয়েছেন</span></h2>
+      <div class="reviews">
+        <figure class="review">
+          <blockquote>…their words…</blockquote>
+          <figcaption>— First name, role</figcaption>
+        </figure>
+      </div>
+    </section>
+    -->
+
+    <section class="section" id="how" aria-labelledby="how-title">
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> cat how-it-works.txt</p>
+      <h2 class="section-title" id="how-title"><span lang="en">How it works</span><span lang="bn">কীভাবে কাজ করে</span></h2>
+      <ol class="lines">
+        <li>
+          <h3><span lang="en">message</span><span lang="bn">মেসেজ</span></h3>
+          <p><span lang="en">Tell me on WhatsApp what you need and what kind of job you're applying for.</span><span lang="bn">হোয়াটসঅ্যাপে জানান কী দরকার, আর কোন ধরনের চাকরির জন্য আবেদন করছেন।</span></p>
+        </li>
+        <li>
+          <h3><span lang="en">your details</span><span lang="bn">আপনার তথ্য</span></h3>
+          <p><span lang="en">Send your current CV if you have one, or your education, experience, projects and skills. A photo if you want one on the CV.</span><span lang="bn">থাকলে আপনার বর্তমান সিভি পাঠান, নাহলে পড়াশোনা, অভিজ্ঞতা, প্রজেক্ট ও দক্ষতার তথ্য। সিভিতে ছবি চাইলে একটি ছবি।</span></p>
+        </li>
+        <li>
+          <h3><span lang="en">first draft</span><span lang="bn">প্রথম খসড়া</span></h3>
+          <p><span lang="en">Within 1–2 days, often faster. You read it and tell me what to change.</span><span lang="bn">১–২ দিনের মধ্যে, অনেক সময় আরও আগে। আপনি পড়ে জানাবেন কী বদলাতে হবে।</span></p>
+        </li>
+        <li>
+          <h3><span lang="en">final PDF</span><span lang="bn">ফাইনাল PDF</span></h3>
+          <p><span lang="en">I make the changes and send the finished CV, ready to upload or print.</span><span lang="bn">পরিবর্তন করে তৈরি সিভি পাঠাই, আপলোড বা প্রিন্টের জন্য প্রস্তুত।</span></p>
+        </li>
+      </ol>
+      <p class="fine">
+        <span lang="en">Payment by bKash or Nagad.</span>
+        <span lang="bn">পেমেন্ট বিকাশ বা নগদে।</span>
+      </p>
+    </section>
+
+    <section class="section" id="privacy" aria-labelledby="privacy-title">
+      <p class="cmd deco" aria-hidden="true"><span class="ps1">~ $</span> cat privacy.txt</p>
+      <h2 class="section-title" id="privacy-title"><span lang="en">Your privacy</span><span lang="bn">আপনার গোপনীয়তা</span></h2>
+      <p class="privacy">
+        <span lang="en">Your details are used only to make your CV. I don't share them, and I delete them after delivery unless you ask me to keep them for future updates.</span>
+        <span lang="bn">আপনার তথ্য শুধু আপনার সিভি তৈরিতেই ব্যবহার হয়। আমি কারও সাথে শেয়ার করি না, আর ডেলিভারির পর মুছে ফেলি, যদি না পরে আপডেটের জন্য রেখে দিতে বলেন।</span>
+      </p>
+    </section>
+
+    <section class="section cv-cta" aria-labelledby="cta-title">
+      <p class="contact-big" id="cta-title">
+        <span lang="en">Ready when you are<span class="cursor" aria-hidden="true"></span></span>
+        <span lang="bn">শুরু করতে প্রস্তুত<span class="cursor" aria-hidden="true"></span></span>
+      </p>
+      <a class="button whatsapp" data-wa href="https://wa.me/8801710361756" target="_blank" rel="noreferrer">
+        <span lang="en">Message me on WhatsApp</span><span lang="bn">হোয়াটসঅ্যাপে মেসেজ দিন</span>
+      </a>
+      <p class="fine">+880 1710-361756</p>
+    </section>
+  </main>
+
+  <!-- On phones, WhatsApp is always one tap away. -->
+  <a class="wa-bar" data-wa href="https://wa.me/8801710361756" target="_blank" rel="noreferrer">
+    <span lang="en">Message me on WhatsApp</span><span lang="bn">হোয়াটসঅ্যাপে মেসেজ দিন</span>
+  </a>
+
+  <footer class="footer wrap">
+    <p class="cmd"><span class="ps1" aria-hidden="true">~ $</span> cd ~</p>
+    <p><a href="../">sarwaruddin.com</a> · © 2026 Sarwar Uddin</p>
+  </footer>
+
+  <script>
+    // The language switch, and a WhatsApp message written in the page's language.
+    (function () {
+      var root = document.documentElement;
+      var messages = {
+        en: "Hi Sarwar, I'd like a CV. I'm a [student / fresh graduate / working] in [field].",
+        bn: 'হাই সারওয়ার, আমার একটি সিভি দরকার। আমি [শিক্ষার্থী / সদ্য গ্র্যাজুয়েট / চাকরিজীবী], [বিষয়/ক্ষেত্র]।'
+      };
+      function apply(lang) {
+        root.dataset.lang = lang;
+        root.lang = lang;
+        document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+          b.setAttribute('aria-pressed', String(b.dataset.setLang === lang));
+        });
+        document.querySelectorAll('[data-wa]').forEach(function (a) {
+          a.href = 'https://wa.me/8801710361756?text=' + encodeURIComponent(messages[lang]);
+        });
+      }
+      document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+        b.addEventListener('click', function () {
+          apply(b.dataset.setLang);
+          try { localStorage.setItem('cv-lang', b.dataset.setLang); } catch (e) {}
+        });
+      });
+      apply(root.dataset.lang === 'bn' ? 'bn' : 'en');
+    })();
+  </script>
+</body>
+</html>
