@@ -42,11 +42,12 @@ html[data-lang="bn"] .section-title { font-family: "Noto Sans Bengali", "Hind Si
 .package.featured { border-color: var(--amber); }
 
 /* samples */
-.samples { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.samples { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 20px; }
 .samples figure { display: flex; flex-direction: column; gap: 10px; }
 .samples img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: #fff; }
 .samples a:hover img { border-color: var(--amber); }
-.samples figcaption { color: var(--muted); font-size: 13px; }
+.samples figcaption { display: flex; flex-direction: column; gap: 2px; color: var(--muted); font-size: 13px; }
+.samples .sample-name { color: var(--text); font-size: 14px; }
 .samples figcaption a { color: var(--amber); }
 
 /* reviews (shown once there are real ones) */
@@ -60,8 +61,12 @@ html[data-lang="bn"] .section-title { font-family: "Noto Sans Bengali", "Hind Si
 .cv-cta { display: flex; flex-direction: column; align-items: flex-start; gap: 24px; }
 .cv-cta .fine { margin-top: 0; }
 
+@media (max-width: 900px) {
+  .samples { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
 @media (max-width: 760px) {
-  .packages, .samples { grid-template-columns: 1fr; }
+  .packages { grid-template-columns: 1fr; }
   .statusbar nav { display: none; }
   .wa-bar {
     position: fixed; right: 12px; bottom: 12px; left: 12px; z-index: 15;
