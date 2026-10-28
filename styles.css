@@ -110,6 +110,10 @@ h1 { max-width: 15ch; margin: 36px 0 32px; font-size: clamp(40px, 8.4vw, 92px); 
 .entry-link { width: fit-content; margin-top: 14px; color: var(--amber); font-size: 13px; text-decoration: none; }
 a.entry-link:hover { text-decoration: underline; text-underline-offset: 4px; }
 .entry-link.muted { color: var(--faint); }
+.entry-shot { display: block; max-width: min(100%, 62ch); margin-top: 18px; border: 1px solid var(--line); background: var(--panel); }
+.entry-shot.narrow { max-width: min(100%, 44ch); }
+.entry-shot img { display: block; width: 100%; height: auto; }
+a.entry-shot:hover { border-color: var(--faint); }
 
 /* cat -n */
 .lines { padding: 0; list-style: none; counter-reset: line; }
