@@ -54,10 +54,10 @@ h1, h2, h3, p, dl, dd, figure, ol, ul { margin: 0; }
 @keyframes blink { 50% { opacity: 0; } }
 
 /* hero */
-.hero { padding: 96px 0 104px; }
+.hero { padding: 80px 0 88px; }
 .hero-name { margin-top: 18px; color: var(--amber); font-size: 15px; font-weight: 700; letter-spacing: .02em; }
 .hero-role { color: var(--muted); }
-h1 { max-width: 15ch; margin: 36px 0 32px; font-size: clamp(40px, 8.4vw, 92px); font-weight: 700; line-height: 1.02; letter-spacing: -.05em; text-wrap: balance; }
+h1 { max-width: 24ch; margin: 28px 0 20px; font-size: clamp(30px, 4.6vw, 48px); font-weight: 700; line-height: 1.15; letter-spacing: -.03em; text-wrap: balance; }
 .hero-copy { max-width: 52ch; color: var(--soft); font-size: 16px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; }
 .button { padding: 10px 16px; border: 1px solid var(--amber); background: var(--amber); color: var(--bg); font-weight: 700; text-decoration: none; transition: background .15s ease, color .15s ease; }
@@ -123,7 +123,7 @@ a.entry-shot:hover { border-color: var(--faint); }
 .lines p { color: var(--soft); font-size: 14px; }
 
 /* contact */
-.contact-big { margin: 32px 0 28px; font-size: clamp(36px, 7vw, 72px); font-weight: 700; line-height: 1.05; letter-spacing: -.05em; }
+.contact-big { margin: 28px 0 24px; font-size: clamp(28px, 4.6vw, 44px); font-weight: 700; line-height: 1.1; letter-spacing: -.03em; }
 .usage { display: grid; gap: 4px; }
 .usage dl { margin-top: 16px; }
 .usage dl div { display: grid; grid-template-columns: 16ch minmax(0, 1fr); gap: 12px; padding: 4px 0 4px 2ch; }
