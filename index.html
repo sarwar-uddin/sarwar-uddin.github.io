@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sarwar Uddin · Android apps, desktop widgets, local-first tools</title>
+<meta name="description" content="Sarwar Uddin builds Android apps, KDE Plasma widgets and local-first tools in Dhaka, Bangladesh. Weatherglass, Aviary, Telegraph, LiveSky and more. Open source.">
+<meta property="og:title" content="Sarwar Uddin: things I've built">
+<meta property="og:description" content="Android apps, KDE Plasma widgets and local-first tools, all open source. Dhaka, Bangladesh.">
+<meta property="og:image" content="https://sarwaruddin.com/assets/og.jpg">
+<meta name="theme-color" content="#0b0b0d">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Sarwar Uddin</a>
+  <nav>
+    <a href="#android">Android</a>
+    <a href="#desktop">Desktop</a>
+    <a href="#tools">Tools</a>
+    <a href="https://github.com/sarwar-uddin">GitHub</a>
+    <a href="#work" class="nav-cta">Work with me</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<!-- ============================================================ hero -->
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <p class="status"><span class="dot"></span>Taking on small projects</p>
+      <p class="kicker">Dhaka, Bangladesh · CSE at North South University</p>
+      <h1>Sarwar Uddin</h1>
+      <p class="lede">I build software people keep: <b>Android apps</b>, <b>KDE Plasma widgets</b> and <b>local-first tools</b>. Every project ships finished, with docs and a release you can install.</p>
+      <ul class="stats">
+        <li><b>3</b> Android apps</li>
+        <li><b>5</b> Plasma widgets</li>
+        <li><b>11</b> open-source projects</li>
+      </ul>
+      <div class="cta">
+        <a class="btn" href="#android">See the work</a>
+        <a class="btn ghost" href="#work">Work with me</a>
+      </div>
+    </div>
+    <div class="hero-phones" aria-label="Kinetics on the desktop, Weatherglass and Aviary on Android">
+      <a href="#kinetics" class="hw"><span class="hw-bar"><i></i><i></i><i></i></span><img src="assets/kinetics-hero.webp" alt="Kinetics: caffeine in the blood over a day, two coffees"></a>
+      <a href="#weatherglass" class="hp hp-1"><img src="assets/wg-01.webp" alt="Weatherglass"></a>
+      <a href="#aviary" class="hp hp-2"><img src="assets/av-bird.webp" alt="Aviary"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ android -->
+<section id="android" class="band band-intro">
+  <div class="wrap">
+    <p class="eyebrow">01 · Android</p>
+    <h2>Apps for the phone in your pocket</h2>
+    <p class="sub">Kotlin and Jetpack Compose. Offline-first, no trackers, no Play Services. Each app has its own look, because each is a different instrument.</p>
+  </div>
+</section>
+
+<article id="weatherglass" class="app app-weatherglass">
+  <div class="wrap app-grid">
+    <div class="app-text">
+      <img class="app-icon" src="assets/icon-weatherglass.svg" alt="" width="64" height="64">
+      <h3>Weatherglass</h3>
+      <p class="tagline">A pocket weather instrument on a black glass dial.</p>
+      <ul class="points">
+        <li><b>Model consensus:</b> ECMWF, GFS, ICON, GEM and JMA side by side, with a confidence score for each.</li>
+        <li><b>Air and heat:</b> AQI against WHO and Bangladesh limits, plus wet-bulb heat stress and a planner for when it's safe to go out.</li>
+        <li><b>History:</b> how today ranks against every year since 1940. Also a scrubbable 48-hour meteogram and home-screen widgets.</li>
+      </ul>
+      <p class="chips"><span>Kotlin</span><span>Compose</span><span>Glance widgets</span><span>Open-Meteo</span></p>
+      <p class="links"><a class="btn small" href="https://github.com/sarwar-uddin/weatherglass/releases/latest">Download APK</a><a class="textlink" href="https://github.com/sarwar-uddin/weatherglass">Source ↗</a></p>
+    </div>
+    <div class="phones">
+      <img src="assets/wg-01.webp" alt="Weatherglass: air quality gauge, AQI 183, with pollutants against WHO limits" loading="lazy">
+      <img src="assets/wg-02.webp" alt="Weatherglass: 48-hour meteogram" loading="lazy">
+      <img src="assets/wg-03.webp" alt="Weatherglass: today against every year since 1940" loading="lazy">
+    </div>
+  </div>
+</article>
+
+<article id="aviary" class="app app-aviary">
+  <div class="wrap app-grid flip">
+    <div class="app-text">
+      <img class="app-icon" src="assets/icon-aviary.webp" alt="" width="64" height="64">
+      <h3>Aviary</h3>
+      <p class="tagline">A field guide to the birds of Bangladesh · বাংলাদেশের পাখি</p>
+      <ul class="points">
+        <li><b>All 828 species</b> recorded in the country, each with photos, names in English, বাংলা and Latin, field notes and the Wikipedia article.</li>
+        <li><b>Calls and songs</b> for 775 species, with sonograms. A <em>what's around this month</em> view, and a birdwatch log with GPS.</li>
+        <li><b>The data:</b> my own Python pipeline merges Wikipedia, Wikidata, Commons, xeno-canto and the Wildlife Act 2012 schedule into one offline database. Every photo and recording is credited to its author.</li>
+      </ul>
+      <p class="chips"><span>Kotlin</span><span>Compose</span><span>Python</span><span>SQLite</span><span>open data</span></p>
+      <p class="links"><a class="btn small" href="https://github.com/sarwar-uddin/aviary/releases/latest">Download APK</a><a class="textlink" href="https://github.com/sarwar-uddin/aviary">Source ↗</a></p>
+    </div>
+    <div class="phones">
+      <img src="assets/av-birds.webp" alt="Aviary: bird of the day, an Asian barred owlet" loading="lazy">
+      <img src="assets/av-bird.webp" alt="Aviary: species page with photo, names and status" loading="lazy">
+      <img src="assets/av-month.webp" alt="Aviary: what's around in November" loading="lazy">
+    </div>
+  </div>
+</article>
+
+<article id="telegraph" class="app app-telegraph">
+  <div class="wrap app-grid">
+    <div class="app-text">
+      <div class="app-icon glyph" aria-hidden="true">·−·</div>
+      <h3>Telegraph</h3>
+      <p class="tagline">Learn Morse code, then send it by sound, flashlight or vibration.</p>
+      <ul class="points">
+        <li><b>Koch method:</b> 40 lessons at full character speed with Farnsworth spacing. Copy at 90% and the next letter unlocks.</li>
+        <li><b>Signal lamp:</b> your phone's torch blinks the message out, with a beacon mode and a full-screen flash for night.</li>
+        <li><b>Straight key:</b> a brass key you tap, decoded live by a decoder that adapts to your speed. The whole app is 1.3 MB.</li>
+      </ul>
+      <p class="chips"><span>Kotlin</span><span>Compose</span><span>AudioTrack</span><span>Camera2 torch</span></p>
+      <p class="links"><a class="btn small" href="https://github.com/sarwar-uddin/telegraph/releases/latest">Download APK</a><a class="textlink" href="https://github.com/sarwar-uddin/telegraph">Source ↗</a></p>
+    </div>
+    <div class="phones">
+      <img src="assets/tg-learn.webp" alt="Telegraph: Koch lesson 1" loading="lazy">
+      <img src="assets/tg-signal.webp" alt="Telegraph: sending SOS with the signal lamp" loading="lazy">
+      <img src="assets/tg-key.webp" alt="Telegraph: brass straight key" loading="lazy">
+    </div>
+  </div>
+</article>
+
+<!-- ============================================================ desktop -->
+<section id="desktop" class="band desktop">
+  <div class="wrap">
+    <p class="eyebrow">02 · Desktop</p>
+    <h2>KDE Plasma 6 widgets</h2>
+    <p class="sub">QML and JavaScript. I use them on my own Arch desktop every day.</p>
+
+    <figure id="livesky" class="feature">
+      <img src="assets/livesky-2.webp" alt="LiveSky in the small hours" loading="lazy">
+      <figcaption>
+        <h3>LiveSky</h3>
+        <p>A lock screen showing the real sky over you: stars and the Milky Way, planets, a realistic Moon, satellites, meteors and <b>live aircraft</b>. It all sits above a city seen from a rooftop, under the real weather.</p>
+        <a class="textlink" href="https://github.com/sarwar-uddin/plasma-livesky">Source ↗</a>
+      </figcaption>
+    </figure>
+
+    <div class="cards">
+      <a class="card" href="https://github.com/sarwar-uddin/plasma-observatory">
+        <img src="assets/observatory.webp" alt="Observatory popup: meteogram and air quality" loading="lazy">
+        <h4>Observatory</h4>
+        <p>A weather and air-quality widget: AQI in the panel; a meteogram, PM2.5 against WHO and Bangladesh limits, and today against every year since 1940 in the popup.</p>
+      </a>
+      <a class="card" href="https://github.com/sarwar-uddin/plasma-chronos">
+        <img src="assets/chronos.webp" alt="Chronos clock popup" loading="lazy">
+        <h4>Chronos</h4>
+        <p>A panel clock with a mechanical watch face, a month view and world clocks.</p>
+      </a>
+      <a class="card" href="https://github.com/sarwar-uddin/plasma-now-playing">
+        <img src="assets/nowplaying.webp" alt="Now Playing media card" loading="lazy">
+        <h4>Now Playing</h4>
+        <p>A media widget with album art, a chart-style seek bar, MPRIS controls and listening stats.</p>
+      </a>
+      <a class="card" href="https://github.com/sarwar-uddin/plasma-system-strip">
+        <img src="assets/systemstrip.webp" alt="System Strip monitor" loading="lazy">
+        <h4>System Strip</h4>
+        <p>CPU, RAM, GPU, network and disk drawn as a meteogram, so you can read the last hour at a glance.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ tools -->
+<section id="tools" class="band tools">
+  <div class="wrap">
+    <p class="eyebrow">03 · Tools</p>
+    <h2>Local-first software</h2>
+    <p class="sub">They run on your own computer and keep your data there.</p>
+
+    <div class="tool" id="kinetics">
+      <img src="assets/kinetics.webp" alt="Kinetics: caffeine concentration over a day after two coffees" loading="lazy">
+      <div>
+        <h3>Kinetics</h3>
+        <p>An educational pharmacokinetics explorer: see what a substance does inside the body over time. It covers 20 substances with parameters cited from the literature, models dosing and accumulation, and warns about combinations. My own PK engine, in PySide6 and Kirigami.</p>
+        <a class="textlink" href="https://github.com/sarwar-uddin/kinetics">Source ↗</a>
+      </div>
+    </div>
+    <div class="tool flip">
+      <img src="assets/sonic-album.webp" alt="Sonic Archive album page" loading="lazy">
+      <div>
+        <h3>Sonic Archive</h3>
+        <p>A catalog for a lossless CD collection that never writes to your music. It splits images by CUE sheet, reads EAC and XLD rip logs for AccurateRip results, shows booklet scans and OBI strips, compares pressings and measures dynamic range.</p>
+        <p class="chips"><span>TypeScript</span><span>React</span><span>Express</span><span>SQLite</span><span>ffmpeg</span></p>
+        <a class="textlink" href="https://github.com/sarwar-uddin/sonic-archive">Source ↗</a>
+      </div>
+    </div>
+    <div class="tool">
+      <img src="assets/staticfm.webp" alt="Static FM tuner" loading="lazy">
+      <div>
+        <h3>Static FM</h3>
+        <p>A web radio for the music you've saved on YouTube, with an early-2000s feel: stations on a tuner dial with static between them, a tape band that keeps copies with yt-dlp, and a record crate for the whole library.</p>
+        <a class="textlink" href="https://github.com/sarwar-uddin/static-fm">Source ↗</a>
+      </div>
+    </div>
+
+    <div class="bench">
+      <h4>On the workbench</h4>
+      <ul>
+        <li><b>Orrery</b>: a KDE app for the solar system, the Moon and the sky, with a three.js 3D view.</li>
+        <li><b>ShopKit</b> (শপকিট): cash memos, price lists and offer posts for small shops, in Bangla and English.</li>
+        <li><b>Newsroom</b>: a Bangla-first local news platform built around real editorial work.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ how -->
+<section class="band how">
+  <div class="wrap how-grid">
+    <div><h4>Finished, not started</h4><p>A project is done when it has a release, a README a stranger can follow, and tests where they count.</p></div>
+    <div><h4>Offline first</h4><p>The app works with no signal and syncs what it can. The data belongs to the person using it.</p></div>
+    <div><h4>Real data, credited</h4><p>Open data and cited sources, with every photographer, recordist and paper credited.</p></div>
+    <div><h4>Each its own look</h4><p>A weather glass, a field guide, a telegraph office. The design comes from what the tool is.</p></div>
+  </div>
+</section>
+
+<!-- ============================================================ work -->
+<section id="work" class="band work">
+  <div class="wrap">
+    <p class="eyebrow">Work with me</p>
+    <h2>I take on small projects</h2>
+    <div class="services">
+      <div><h4>Android apps</h4><p>Native Kotlin and Compose, from idea to signed release. That includes widgets, offline data and the Play Store listing.</p></div>
+      <div><h4>Offline guides from open data</h4><p>The Aviary engine works for any collection: birds, butterflies, plants, a park, a museum. I build the data pipeline and the app.</p></div>
+      <div><h4>Linux and KDE desktop</h4><p>Plasma widgets, lock screens and small desktop tools in QML, Python or Kirigami.</p></div>
+      <div><h4>Web tools</h4><p>TypeScript, React, Node and PostgreSQL, preferably small, fast and self-hostable.</p></div>
+    </div>
+    <div class="contact">
+      <a class="btn" id="mail" href="#work" data-u="avqqhenjenf" data-d="zbp.yvnzabgbec">Email me</a>
+      <a class="btn ghost" href="https://github.com/sarwar-uddin">github.com/sarwar-uddin</a>
+    </div>
+    <p class="note">Tell me what you're making and roughly when you need it. I reply within a day or two.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Sarwar Uddin · Dhaka · Everything here is open source unless it says otherwise</p>
+</footer>
+
+<script>
+// The address isn't in the page source; it's assembled when a person clicks, to keep scrapers off it.
+(function () {
+  var a = document.getElementById("mail"); if (!a) return;
+  function d(x) { return x.replace(/[a-z]/gi, function (c) { var b = c <= "Z" ? 65 : 97; return String.fromCharCode((c.charCodeAt(0) - b + 13) % 26 + b); }).split("").reverse().join(""); }
+  a.addEventListener("click", function (e) {
+    var m = d(a.dataset.u) + "\u0040" + d(a.dataset.d);
+    if (a.dataset.shown) return;            // second click follows the mailto link
+    e.preventDefault(); a.dataset.shown = "1";
+    a.href = "mai" + "lto:" + m; a.textContent = m;
+    window.location.href = a.href;
+  });
+})();
+</script>
+<noscript><style>#mail{display:none}</style></noscript>
+</body>
+</html>
