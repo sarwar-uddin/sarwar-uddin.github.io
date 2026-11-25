@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sarwar Uddin · Android apps, desktop widgets, local-first tools</title>
-<meta name="description" content="Sarwar Uddin builds Android apps, KDE Plasma widgets and local-first tools in Dhaka, Bangladesh. Weatherglass, Aviary, Telegraph, LiveSky and more. Open source.">
+<title>Sarwar Uddin · Android apps, publishing tools, KDE desktop, local-first software</title>
+<meta name="description" content="Sarwar Uddin builds Android apps, publishing tools, KDE Plasma apps and widgets, and local-first software in Dhaka, Bangladesh. Weatherglass, Aviary, Telegraph, Newsroom, Orrery, ShopKit and more.">
 <meta property="og:title" content="Sarwar Uddin: things I've built">
-<meta property="og:description" content="Android apps, KDE Plasma widgets and local-first tools, all open source. Dhaka, Bangladesh.">
+<meta property="og:description" content="Android apps, publishing tools, KDE Plasma apps and widgets, and local-first software. Dhaka, Bangladesh.">
 <meta property="og:image" content="https://sarwaruddin.com/assets/og.jpg">
 <meta name="theme-color" content="#0b0b0d">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -40,7 +40,7 @@
       <ul class="stats">
         <li><b>3</b> Android apps</li>
         <li><b>5</b> Plasma widgets</li>
-        <li><b>11</b> open-source projects</li>
+        <li><b>12</b> open-source projects</li>
       </ul>
       <div class="cta">
         <a class="btn" href="#android">See the work</a>
@@ -157,7 +157,7 @@
     </div>
 
     <p class="chips"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Tiptap editor</span><span>Playwright tests</span><span>Docker</span></p>
-    <p class="nr-note"><span class="status"><span class="dot"></span>In development</span> If you run a publication, or want to start one, and need a platform like this, <a class="textlink" href="#work">write to me</a>.</p>
+    <p class="nr-note"><span class="status"><span class="dot"></span>In development · source not public yet</span> If you run a publication, or want to start one, and need a platform like this, <a class="textlink" href="#work">write to me</a>.</p>
   </div>
 </section>
 
@@ -238,6 +238,7 @@
       <div>
         <h3>Kinetics</h3>
         <p>An educational pharmacokinetics explorer: see what a substance does inside the body over time. It covers 20 substances with parameters cited from the literature, models dosing and accumulation, and warns about combinations. My own PK engine, in PySide6 and Kirigami.</p>
+        <p class="chips"><span>Python</span><span>PySide6</span><span>Kirigami</span><span>SciPy</span></p>
         <a class="textlink" href="https://github.com/sarwar-uddin/kinetics">Source ↗</a>
       </div>
     </div>
@@ -255,8 +256,17 @@
       <div>
         <h3>Static FM</h3>
         <p>A web radio for the music you've saved on YouTube, with an early-2000s feel: stations on a tuner dial with static between them, a tape band that keeps copies with yt-dlp, and a record crate for the whole library.</p>
+        <p class="chips"><span>TypeScript</span><span>React</span><span>Express</span><span>yt-dlp</span></p>
         <a class="textlink" href="https://github.com/sarwar-uddin/static-fm">Source ↗</a>
       </div>
+    </div>
+
+    <div class="bench" id="cinefile">
+      <p class="status"><span class="dot"></span>In development · source not public yet</p>
+      <h4>Cinefile</h4>
+      <p>A self-hostable film library and recommender. Import your Letterboxd history and it recommends films with the reasons shown, tuned to your mood tonight, favouring good films over merely popular ones. Under it is a hybrid model: text embeddings of each film, collaborative filtering trained on MovieLens, and a learned ranker on top, each measured against simple baselines before it ships.</p>
+      <p>The import, library, film pages and stats work now; the recommender is being built.</p>
+      <p class="chips"><span>Python</span><span>FastAPI</span><span>PostgreSQL + pgvector</span><span>LightGBM</span><span>React</span></p>
     </div>
 
   </div>

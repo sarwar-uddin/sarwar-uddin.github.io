@@ -157,7 +157,10 @@ h2 { font-size: clamp(32px, 4.4vw, 50px); line-height: 1.1; }
 .tool + .cards { margin-top: 64px; }
 .tool p { color: #cfcbc3; }
 .bench { margin-top: 72px; padding: 26px 28px; border: 1px dashed #3a3a44; border-radius: 16px; }
-.bench h4 { font-size: 22px; }
+.bench h4 { font-size: 28px; }
+.bench > p { color: var(--soft); max-width: 780px; margin: 10px 0 0; }
+.bench .status { margin: 0 0 16px; }
+.bench .status .dot { background: var(--accent); box-shadow: 0 0 0 4px rgba(233,180,95,.18); }
 .bench ul { margin: 12px 0 0; padding-left: 18px; color: var(--soft); }
 .bench li { margin: 6px 0; }
 .bench b { color: var(--text); }
