@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <title>ShopKit</title>
+  <rect width="512" height="512" rx="112" fill="#0f5e6b"/>
+  <path d="M120 128h272l32 80H88z" fill="#fff"/>
+  <path d="M88 208a33.6 33.6 0 0 0 67.2 0a33.6 33.6 0 0 0 67.2 0a33.6 33.6 0 0 0 67.2 0a33.6 33.6 0 0 0 67.2 0a33.6 33.6 0 0 0 67.2 0z" fill="#fff"/>
+  <path d="M188 128l-12 80M256 128v80M324 128l12 80" stroke="#0f5e6b" stroke-width="10"/>
+  <rect x="132" y="262" width="248" height="128" rx="12" fill="#fff"/>
+  <rect x="228" y="300" width="56" height="90" rx="6" fill="#0f5e6b"/>
+</svg>

@@ -18,6 +18,7 @@
   <a class="brand" href="#top">Sarwar Uddin</a>
   <nav>
     <a href="#android">Android</a>
+    <a href="#publishing">Publishing</a>
     <a href="#desktop">Desktop</a>
     <a href="#tools">Tools</a>
     <a href="https://github.com/sarwar-uddin">GitHub</a>
@@ -35,7 +36,7 @@
       <p class="status"><span class="dot"></span>Taking on small projects</p>
       <p class="kicker">Dhaka, Bangladesh · CSE at North South University</p>
       <h1>Sarwar Uddin</h1>
-      <p class="lede">I build software people keep: <b>Android apps</b>, <b>KDE Plasma widgets</b> and <b>local-first tools</b>. Every project ships finished, with docs and a release you can install.</p>
+      <p class="lede">I build software people keep: <b>Android apps</b>, <b>publishing tools</b>, <b>KDE Plasma widgets</b> and <b>local-first tools</b>. Every project ships finished, with docs and a release you can install.</p>
       <ul class="stats">
         <li><b>3</b> Android apps</li>
         <li><b>5</b> Plasma widgets</li>
@@ -129,12 +130,43 @@
   </div>
 </article>
 
+<!-- ============================================================ publishing -->
+<section id="publishing" class="band newsroom">
+  <div class="wrap">
+    <p class="eyebrow">02 · Publishing</p>
+    <h2>Tools for independent publishing</h2>
+    <p class="sub">Software for small newsrooms that want to own their platform, starting with the CMS and growing into the tools around it.</p>
+
+    <h3 class="nr-title">Newsroom</h3>
+    <p class="tagline">A publishing platform built around how editors actually work. A whole newsroom you can run on your own server, not a theme on someone else's platform.</p>
+
+    <figure class="nr-cms">
+      <img src="assets/nr-cms.webp" alt="Newsroom CMS: editing a published article, with Save, Unpublish and Archive, section, byline, tags and a front-page feature switch" loading="lazy">
+      <figcaption>The editor's desk: a published story with its status, byline, section, tags and front-page switch.</figcaption>
+    </figure>
+    <div class="nr-shots">
+      <img src="assets/nr-front.webp" alt="Newsroom front page: masthead, section bar, lead story and a numbered Latest column" loading="lazy">
+      <img src="assets/nr-article.webp" alt="Newsroom article page: section kicker, headline, standfirst, byline and share links" loading="lazy">
+    </div>
+
+    <div class="nr-grid">
+      <div><h4>Editorial workflow</h4><p>Draft, review, publish. Authors submit, editors publish, and an author's piece is locked while it's in review. Unpublishing takes a story off every page at once, and corrections get an "Updated" date.</p></div>
+      <div><h4>Roles that protect people</h4><p>Admin, editor and author roles are enforced on the server. Authors can't see anyone else's work, not even that it exists. There's no public sign-up, and passwords are hashed with Argon2id.</p></div>
+      <div><h4>Reader side</h4><p>A newspaper-style front page, section, author and tag archives, full-text search, RSS, a sitemap, and proper link previews when stories are shared on social media.</p></div>
+      <div><h4>English and Bangla</h4><p>English first. The content model is ready for Bangla, and every date is shown in Dhaka time.</p></div>
+    </div>
+
+    <p class="chips"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Tiptap editor</span><span>Playwright tests</span><span>Docker</span></p>
+    <p class="nr-note"><span class="status"><span class="dot"></span>In development</span> If you run a publication, or want to start one, and need a platform like this, <a class="textlink" href="#work">write to me</a>.</p>
+  </div>
+</section>
+
 <!-- ============================================================ desktop -->
 <section id="desktop" class="band desktop">
   <div class="wrap">
-    <p class="eyebrow">02 · Desktop</p>
-    <h2>KDE Plasma 6 widgets</h2>
-    <p class="sub">QML and JavaScript. I use them on my own Arch desktop every day.</p>
+    <p class="eyebrow">03 · Desktop</p>
+    <h2>KDE Plasma 6 apps and widgets</h2>
+    <p class="sub">QML, JavaScript and Python. I use them on my own Arch desktop every day.</p>
 
     <figure id="livesky" class="feature">
       <img src="assets/livesky-2.webp" alt="LiveSky in the small hours" loading="lazy">
@@ -144,6 +176,16 @@
         <a class="textlink" href="https://github.com/sarwar-uddin/plasma-livesky">Source ↗</a>
       </figcaption>
     </figure>
+    <div class="tool" id="orrery">
+      <img src="assets/orrery.webp" alt="Orrery: the solar system in 3D, with the Moon, tonight's sky and the Sun's day for Dhaka" loading="lazy">
+      <div>
+        <h3>Orrery</h3>
+        <p>A desk orrery: the solar system as it is right now in 3D, the Moon's phase, the Sun's day and what's worth looking up at tonight from your city. Run the clock forwards or back at up to a year a second, anywhere from 1800 to 2050.</p>
+        <p>The ephemeris is my own, with no astronomy libraries, and checked against JPL's DE421: the Sun, Moon and inner planets within 1.5′, rise and set times within 8 seconds.</p>
+        <p class="chips"><span>Python</span><span>PySide6</span><span>Kirigami</span><span>three.js</span></p>
+        <a class="textlink" href="https://github.com/sarwar-uddin/orrery">Source ↗</a>
+      </div>
+    </div>
 
     <div class="cards">
       <a class="card" href="https://github.com/sarwar-uddin/plasma-observatory">
@@ -173,10 +215,24 @@
 <!-- ============================================================ tools -->
 <section id="tools" class="band tools">
   <div class="wrap">
-    <p class="eyebrow">03 · Tools</p>
+    <p class="eyebrow">04 · Tools</p>
     <h2>Local-first software</h2>
-    <p class="sub">They run on your own computer and keep your data there.</p>
+    <p class="sub">They run on your own computer or phone and keep your data there.</p>
 
+    <div class="tool flip" id="shopkit">
+      <div class="phones">
+        <img src="assets/sk-home.webp" alt="ShopKit home: the business, its menu and four tools, in Bangla" loading="lazy">
+        <img src="assets/sk-offer.webp" alt="ShopKit offer post: today's offer for a tea stall, with the old price crossed out" loading="lazy">
+        <img src="assets/sk-price.webp" alt="ShopKit price list: a printable menu with a WhatsApp order QR code" loading="lazy">
+      </div>
+      <div>
+        <h3>ShopKit <span class="bn">শপকিট</span></h3>
+        <p>Everyday paperwork for small shops, restaurants and salons in Bangladesh, Bangla first. Set the business up once and every tool fills itself in: cash memos and invoices (with the amount in words, in lakh and crore), printable price lists, offer posts for Facebook and WhatsApp, and WhatsApp QR stickers.</p>
+        <p>It's an installable web app that works with no internet. Everything stays on the phone; nothing is sent anywhere.</p>
+        <p class="chips"><span>TypeScript</span><span>React</span><span>PWA</span><span>IndexedDB</span><span>Canvas</span></p>
+        <p class="links"><a class="btn small" href="shopkit/">Try it</a></p>
+      </div>
+    </div>
     <div class="tool" id="kinetics">
       <img src="assets/kinetics.webp" alt="Kinetics: caffeine concentration over a day after two coffees" loading="lazy">
       <div>
@@ -203,14 +259,6 @@
       </div>
     </div>
 
-    <div class="bench">
-      <h4>On the workbench</h4>
-      <ul>
-        <li><b>Orrery</b>: a KDE app for the solar system, the Moon and the sky, with a three.js 3D view.</li>
-        <li><b>ShopKit</b> (শপকিট): cash memos, price lists and offer posts for small shops, in Bangla and English.</li>
-        <li><b>Newsroom</b>: a Bangla-first local news platform built around real editorial work.</li>
-      </ul>
-    </div>
   </div>
 </section>
 
@@ -233,6 +281,7 @@
       <div><h4>Android apps</h4><p>Native Kotlin and Compose, from idea to signed release. That includes widgets, offline data and the Play Store listing.</p></div>
       <div><h4>Offline guides from open data</h4><p>The Aviary engine works for any collection: birds, butterflies, plants, a park, a museum. I build the data pipeline and the app.</p></div>
       <div><h4>Linux and KDE desktop</h4><p>Plasma widgets, lock screens and small desktop tools in QML, Python or Kirigami.</p></div>
+      <div><h4>Publishing platforms</h4><p>Sites and editorial CMSs for independent publications and small newsrooms, with workflow, roles and self-hosting built in.</p></div>
       <div><h4>Web tools</h4><p>TypeScript, React, Node and PostgreSQL, preferably small, fast and self-hostable.</p></div>
     </div>
     <div class="contact">
