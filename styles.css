@@ -184,6 +184,7 @@ h2 { font-size: clamp(32px, 4.4vw, 50px); line-height: 1.1; }
 .nr-note { margin: 26px 0 0; color: #4a4740; }
 .nr-note .status { margin: 0 12px 10px 0; border-color: rgba(0,0,0,.15); color: #4a4740; background: transparent; }
 .nr-note .status .dot { background: #b8321f; box-shadow: 0 0 0 4px rgba(184,50,31,.15); }
+.nr-note .status + .textlink { margin-right: 14px; }
 .newsroom .textlink { color: #b8321f; }
 
 /* ---------- how ---------- */
