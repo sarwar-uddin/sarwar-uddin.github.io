@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sarwar Uddin · Android apps, publishing tools, KDE desktop, local-first software</title>
-<meta name="description" content="Sarwar Uddin builds Android apps, publishing tools, KDE Plasma apps and widgets, and local-first software in Dhaka, Bangladesh. Weatherglass, Aviary, Telegraph, Newsroom, Orrery, ShopKit and more.">
+<title>Sarwar Uddin · Android apps, web platforms, KDE desktop, local-first software</title>
+<meta name="description" content="Sarwar Uddin builds Android apps, web platforms, KDE Plasma apps and widgets, and local-first software in Dhaka, Bangladesh. Weatherglass, Aviary, Telegraph, Newsroom, Housemate, Workshop, Orrery, ShopKit and more.">
 <meta property="og:title" content="Sarwar Uddin: things I've built">
-<meta property="og:description" content="Android apps, publishing tools, KDE Plasma apps and widgets, and local-first software. Dhaka, Bangladesh.">
+<meta property="og:description" content="Android apps, web platforms, KDE Plasma apps and widgets, and local-first software. Dhaka, Bangladesh.">
 <meta property="og:image" content="https://sarwaruddin.com/assets/og.jpg">
 <meta name="theme-color" content="#0b0b0d">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -18,7 +18,7 @@
   <a class="brand" href="#top">Sarwar Uddin</a>
   <nav>
     <a href="#android">Android</a>
-    <a href="#publishing">Publishing</a>
+    <a href="#web">Web</a>
     <a href="#desktop">Desktop</a>
     <a href="#tools">Tools</a>
     <a href="https://github.com/sarwar-uddin">GitHub</a>
@@ -33,24 +33,27 @@
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <p class="status"><span class="dot"></span>Taking on small projects</p>
+      <p class="status"><span class="dot"></span>Open to new projects</p>
       <p class="kicker">Dhaka, Bangladesh · CSE at North South University</p>
       <h1>Sarwar Uddin</h1>
-      <p class="lede">I build software people keep: <b>Android apps</b>, <b>publishing tools</b>, <b>KDE Plasma widgets</b> and <b>local-first tools</b>. Every project ships finished, with docs and a release you can install.</p>
+      <p class="lede">I build software people keep: <b>web platforms</b>, <b>Android apps</b>, <b>KDE Plasma widgets</b> and <b>local-first tools</b>. Open source, tested, documented, and shipped finished.</p>
       <ul class="stats">
+        <li><b>3</b> web apps</li>
         <li><b>3</b> Android apps</li>
-        <li><b>5</b> Plasma widgets</li>
-        <li><b>12</b> open-source projects</li>
+        <li><b>17</b> open-source repos</li>
       </ul>
       <div class="cta">
         <a class="btn" href="#android">See the work</a>
         <a class="btn ghost" href="#work">Work with me</a>
       </div>
     </div>
-    <div class="hero-phones" aria-label="Kinetics on the desktop, Weatherglass and Aviary on Android">
-      <a href="#kinetics" class="hw"><span class="hw-bar"><i></i><i></i><i></i></span><img src="assets/kinetics-hero.webp" alt="Kinetics: caffeine in the blood over a day, two coffees"></a>
+    <div class="hero-phones" aria-label="Orrery, Kinetics and Newsroom on the desktop; Weatherglass, Aviary and Housemate on phones">
+      <a href="#orrery" class="hw hw-back"><span class="hw-bar"><i></i><i></i><i></i></span><img src="assets/orrery.webp" alt="Orrery: the solar system in 3D with tonight's sky"></a>
+      <a href="#kinetics" class="hw hw-mid"><span class="hw-bar"><i></i><i></i><i></i></span><img src="assets/kinetics-hero.webp" alt="Kinetics: caffeine in the blood over a day, two coffees"></a>
+      <a href="#web" class="hw hw-front"><span class="hw-bar"><i></i><i></i><i></i></span><img src="assets/nr-front.webp" alt="Newsroom: a newspaper-style front page with masthead, sections and a numbered Latest column"></a>
       <a href="#weatherglass" class="hp hp-1"><img src="assets/wg-01.webp" alt="Weatherglass"></a>
       <a href="#aviary" class="hp hp-2"><img src="assets/av-bird.webp" alt="Aviary"></a>
+      <a href="#housemate" class="hp hp-3"><img src="assets/hm-home-dark.webp" alt="Housemate"></a>
     </div>
   </div>
 </section>
@@ -131,12 +134,12 @@
   </div>
 </article>
 
-<!-- ============================================================ publishing -->
-<section id="publishing" class="band newsroom">
+<!-- ============================================================ web -->
+<section id="web" class="band newsroom">
   <div class="wrap">
-    <p class="eyebrow">02 · Publishing</p>
-    <h2>Tools for independent publishing</h2>
-    <p class="sub">Software for small newsrooms that want to own their platform, starting with the CMS and growing into the tools around it.</p>
+    <p class="eyebrow">02 · Web</p>
+    <h2>Platforms you run on your own server</h2>
+    <p class="sub">Full-stack web apps with real workflows behind them, open source and self-hostable. No platform owns your data.</p>
 
     <h3 class="nr-title">Newsroom</h3>
     <p class="tagline">A publishing platform built around how editors actually work. A whole newsroom you can run on your own server, not a theme on someone else's platform.</p>
@@ -159,6 +162,30 @@
 
     <p class="chips"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Tiptap editor</span><span>Playwright tests</span><span>Docker</span></p>
     <p class="nr-note"><span class="status"><span class="dot"></span>Open source · AGPL-3.0</span><a class="textlink" href="https://github.com/sarwar-uddin/newsroom">Source ↗</a> If you run a publication, or want to start one, and need a platform like this, <a class="textlink" href="#work">write to me</a>.</p>
+
+    <div class="tool hm-tool" id="housemate">
+      <div class="phones">
+        <img src="assets/hm-home.webp" alt="Housemate home: what you owe so far this month, deposit paid, and a payment waiting to be confirmed" loading="lazy">
+        <img src="assets/hm-money.webp" alt="Housemate money: every line of your share, from rent to meals at the month's cost per meal" loading="lazy">
+        <img src="assets/hm-month.webp" alt="Housemate meals by month: a calendar of the household's daily meal counts" loading="lazy">
+      </div>
+      <div>
+        <h3>Housemate</h3>
+        <p>The money side of a shared flat: rent, bills, groceries split by who ate how many meals, deposits into a shared fund, and who owes whom. It replaces the notebook and the WhatsApp maths with numbers everyone can check.</p>
+        <p>Behind it is a real accounting model: every month balances to zero, mistakes are reversed rather than overwritten, and months close properly. The rules live in the database with row-level security and 264 pgTAP tests.</p>
+        <p class="chips"><span>Next.js</span><span>TypeScript</span><span>Supabase</span><span>PostgreSQL</span><span>pgTAP</span><span>PWA</span></p>
+        <p class="links"><span class="status"><span class="dot"></span>Open source · AGPL-3.0</span><a class="textlink" href="https://github.com/sarwar-uddin/housemate">Source ↗</a></p>
+      </div>
+    </div>
+
+    <div class="bench nr-bench" id="workshop">
+      <p class="status"><span class="dot"></span>In development · open source · AGPL-3.0</p>
+      <h4>Workshop</h4>
+      <p>Inventory and order management for small workshops and shops: products, customers, orders and stock. Stock can't be edited directly: it's designed around a ledger, so every count can be explained. Money never passes through a float, and every design decision is written down.</p>
+      <p>Products and categories run on PostgreSQL end to end; customers, orders, the stock ledger and auth are next. Built one vertical slice at a time.</p>
+      <p class="chips"><span>TypeScript</span><span>React</span><span>Express</span><span>PostgreSQL</span><span>Drizzle</span><span>Zod</span></p>
+      <p class="links"><a class="textlink" href="https://github.com/sarwar-uddin/workshop">Source ↗</a></p>
+    </div>
   </div>
 </section>
 
@@ -277,9 +304,9 @@
 <section class="band how">
   <div class="wrap how-grid">
     <div><h4>Finished, not started</h4><p>A project is done when it has a release, a README a stranger can follow, and tests where they count.</p></div>
-    <div><h4>Offline first</h4><p>The app works with no signal and syncs what it can. The data belongs to the person using it.</p></div>
-    <div><h4>Real data, credited</h4><p>Open data and cited sources, with every photographer, recordist and paper credited.</p></div>
-    <div><h4>Each its own look</h4><p>A weather glass, a field guide, a telegraph office. The design comes from what the tool is.</p></div>
+    <div><h4>Your data stays yours</h4><p>Offline first on the phone, self-hosted on the server. No trackers, and no platform holding the data hostage.</p></div>
+    <div><h4>Built to be trusted</h4><p>Permissions checked on the server, money never in a float, every source cited and every decision written down.</p></div>
+    <div><h4>Each its own look</h4><p>A weather glass, a field guide, a newspaper. The design comes from what the tool is.</p></div>
   </div>
 </section>
 
@@ -287,19 +314,26 @@
 <section id="work" class="band work">
   <div class="wrap">
     <p class="eyebrow">Work with me</p>
-    <h2>I take on small projects</h2>
+    <h2>Let's build the thing you need</h2>
+    <p class="sub">From a full-stack platform to a single widget: I take a project from idea to a finished release, with the source, tests and docs handed over to you.</p>
     <div class="services">
-      <div><h4>Android apps</h4><p>Native Kotlin and Compose, from idea to signed release. That includes widgets, offline data and the Play Store listing.</p></div>
+      <div><h4>Web platforms</h4><p>Full-stack apps with real workflows: CMSs, inventory and order systems, internal tools. TypeScript, React, Next.js and PostgreSQL.</p></div>
+      <div><h4>Publishing</h4><p>Sites and editorial CMSs for independent publications and newsrooms, with roles, review and self-hosting built in.</p></div>
+      <div><h4>Android apps</h4><p>Native Kotlin and Compose, from idea to signed release, including widgets, offline data and store listings.</p></div>
       <div><h4>Offline guides from open data</h4><p>The Aviary engine works for any collection: birds, butterflies, plants, a park, a museum. I build the data pipeline and the app.</p></div>
-      <div><h4>Linux and KDE desktop</h4><p>Plasma widgets, lock screens and small desktop tools in QML, Python or Kirigami.</p></div>
-      <div><h4>Publishing platforms</h4><p>Sites and editorial CMSs for independent publications and small newsrooms, with workflow, roles and self-hosting built in.</p></div>
-      <div><h4>Web tools</h4><p>TypeScript, React, Node and PostgreSQL.</p></div>
+      <div><h4>Linux and KDE desktop</h4><p>Plasma apps and widgets in QML, Python or Kirigami.</p></div>
+    </div>
+    <div class="process">
+      <div><span>01</span><h4>Scope</h4><p>We agree on what it does, what it doesn't, and what done looks like.</p></div>
+      <div><span>02</span><h4>Build in slices</h4><p>Working pieces you can try early, not one big reveal at the end.</p></div>
+      <div><span>03</span><h4>Tested and documented</h4><p>Tests, a README and the reasoning behind every decision, written down.</p></div>
+      <div><span>04</span><h4>Yours to keep</h4><p>Full source and a clean handover. No lock-in to me or to a platform.</p></div>
     </div>
     <div class="contact">
       <a class="btn" id="mail" href="#work" data-u="avqqhenjenf" data-d="zbp.yvnzabgbec">Email me</a>
       <a class="btn ghost" href="https://github.com/sarwar-uddin">github.com/sarwar-uddin</a>
     </div>
-    <p class="note">Tell me what you're making and roughly when you need it. I reply within a day or two.</p>
+    <p class="note">Tell me what you're making, who it's for and roughly when you need it. I reply within a day or two.</p>
   </div>
 </section>
 
